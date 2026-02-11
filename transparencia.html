@@ -7,170 +7,186 @@
   <meta name="description" content="Información transparente sobre presupuestos, proyectos y gestión de la Colonia El Mirador.">
   <link rel="icon" type="image/png" href="Fotos/Escudo_Col_Elmirador.png" />
   <link rel="apple-touch-icon" href="Fotos/Escudo_Col_Elmirador.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="css/estilos.css" rel="stylesheet" />
 </head>
-<body class="bg-[#EEF1F4] text-[#2B2B2B]">
-  <!-- Top bar -->
-  <header class="bg-white border-b">
-    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
-      <a href="index.html" class="flex items-center gap-3">
-        <img src="Fotos/Escudo_Col_Elmirador.png" alt="Escudo de la colonia" class="w-10 h-10">
-        <div>
-          <h1 class="text-xl font-semibold text-[#1F4B99]">Colonia El Mirador</h1>
-          <p class="text-sm text-gray-600">Sitio oficial de la comunidad</p>
+<body>
+  <header class="site-header">
+    <nav class="navbar navbar-expand-md navbar-light">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+          <img src="Fotos/Escudo_Col_Elmirador.png" alt="Escudo de la colonia" class="logo-escudo">
+          <div>
+            <span class="d-block">Colonia El Mirador</span>
+            <span class="subtitle d-block">Sitio oficial de la comunidad</span>
+          </div>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navPrincipal">
+          <ul class="navbar-nav ms-auto gap-1 gap-md-3">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+            <li class="nav-item"><a class="nav-link active" href="transparencia.html">Transparencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+          <a href="index.html#reporta" class="btn btn-reporta ms-2 mt-2 mt-md-0">Reporta un problema</a>
         </div>
-      </a>
-      <nav class="hidden md:flex gap-6">
-        <a class="hover:text-[#1F4B99]" href="index.html">Inicio</a>
-        <a class="hover:text-[#1F4B99]" href="noticias.html">Noticias</a>
-        <a class="hover:text-[#1F4B99]" href="servicios.html">Servicios</a>
-        <a class="hover:text-[#1F4B99]" href="eventos.html">Eventos</a>
-        <a class="text-[#1F4B99] font-medium" href="transparencia.html">Transparencia</a>
-        <a class="hover:text-[#1F4B99]" href="contacto.html">Contacto</a>
-      </nav>
-      <a href="index.html#reporta" class="inline-flex items-center px-4 py-2 rounded-xl bg-[#1B8A5A] text-white">
-        Reporta un problema
-      </a>
-    </div>
+      </div>
+    </nav>
   </header>
 
-  <!-- Hero -->
-  <section class="bg-[#1F4B99] text-white">
-    <div class="max-w-7xl mx-auto px-4 py-12">
-      <h2 class="text-3xl md:text-4xl font-bold">Transparencia</h2>
-      <p class="mt-4 text-white/90">Acceso a información sobre presupuestos, proyectos y gestión de la colonia.</p>
-    </div>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container py-4">
+        <h2 class="display-6">Transparencia</h2>
+        <p class="lead mb-0">Acceso a información sobre presupuestos, proyectos y gestión de la colonia.</p>
+      </div>
+    </section>
 
-  <!-- Contenido -->
-  <section class="max-w-7xl mx-auto px-4 py-12">
-    <div class="grid md:grid-cols-2 gap-8 mb-12">
-      <div class="bg-white rounded-2xl shadow p-6">
-        <h3 class="text-xl font-semibold mb-4 text-[#1F4B99]">Presupuesto 2024</h3>
-        <div class="space-y-4">
-          <div>
-            <div class="flex justify-between text-sm mb-1">
-              <span>Ingresos totales</span>
-              <span class="font-semibold">$450,000 MXN</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-2">
-              <div class="bg-[#1F4B99] h-2 rounded-full" style="width: 100%"></div>
+    <section class="py-5">
+      <div class="container">
+        <div class="row g-4 mb-5">
+          <div class="col-lg-6">
+            <div class="card card-elmirador h-100">
+              <div class="card-body">
+                <h3 class="h5 text-primario mb-4">Presupuesto 2024</h3>
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between bar-label">
+                    <span>Ingresos totales</span>
+                    <span class="fw-semibold">$450,000 MXN</span>
+                  </div>
+                  <div class="bar-fill"><div class="fill bg-primario" style="width:100%"></div></div>
+                </div>
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between bar-label">
+                    <span>Gastos en infraestructura</span>
+                    <span class="fw-semibold">$180,000 MXN</span>
+                  </div>
+                  <div class="bar-fill"><div class="fill bg-verde" style="width:40%"></div></div>
+                </div>
+                <div class="mb-3">
+                  <div class="d-flex justify-content-between bar-label">
+                    <span>Servicios y mantenimiento</span>
+                    <span class="fw-semibold">$150,000 MXN</span>
+                  </div>
+                  <div class="bar-fill"><div class="fill bg-verde" style="width:33%"></div></div>
+                </div>
+                <div class="mb-4">
+                  <div class="d-flex justify-content-between bar-label">
+                    <span>Eventos y actividades</span>
+                    <span class="fw-semibold">$50,000 MXN</span>
+                  </div>
+                  <div class="bar-fill"><div class="fill bg-verde" style="width:11%"></div></div>
+                </div>
+                <a href="#" class="link-mas small">Ver informe completo →</a>
+              </div>
             </div>
           </div>
-          <div>
-            <div class="flex justify-between text-sm mb-1">
-              <span>Gastos en infraestructura</span>
-              <span class="font-semibold">$180,000 MXN</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-2">
-              <div class="bg-[#1B8A5A] h-2 rounded-full" style="width: 40%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm mb-1">
-              <span>Servicios y mantenimiento</span>
-              <span class="font-semibold">$150,000 MXN</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-2">
-              <div class="bg-[#1B8A5A] h-2 rounded-full" style="width: 33%"></div>
-            </div>
-          </div>
-          <div>
-            <div class="flex justify-between text-sm mb-1">
-              <span>Eventos y actividades</span>
-              <span class="font-semibold">$50,000 MXN</span>
-            </div>
-            <div class="w-full bg-gray-200 rounded-full h-2">
-              <div class="bg-[#1B8A5A] h-2 rounded-full" style="width: 11%"></div>
+          <div class="col-lg-6">
+            <div class="card card-elmirador h-100">
+              <div class="card-body">
+                <h3 class="h5 text-primario mb-4">Proyectos en curso</h3>
+                <ul class="list-unstyled mb-0">
+                  <li class="proyecto-item mb-3">
+                    <div class="fw-semibold">Rehabilitación del parque central</div>
+                    <div class="small text-secondary">Estado: En ejecución (75% completado)</div>
+                  </li>
+                  <li class="proyecto-item verde mb-3">
+                    <div class="fw-semibold">Mejora del alumbrado público</div>
+                    <div class="small text-secondary">Estado: En ejecución (60% completado)</div>
+                  </li>
+                  <li class="proyecto-item ambar">
+                    <div class="fw-semibold">Programa de reciclaje</div>
+                    <div class="small text-secondary">Estado: Planificación</div>
+                  </li>
+                </ul>
+                <a href="#" class="link-mas small d-inline-block mt-3">Ver todos los proyectos →</a>
+              </div>
             </div>
           </div>
         </div>
-        <a href="#" class="mt-4 inline-block text-[#1F4B99] text-sm font-medium">Ver informe completo →</a>
-      </div>
 
-      <div class="bg-white rounded-2xl shadow p-6">
-        <h3 class="text-xl font-semibold mb-4 text-[#1F4B99]">Proyectos en curso</h3>
-        <ul class="space-y-4">
-          <li class="border-l-4 border-[#1F4B99] pl-4">
-            <div class="font-semibold">Rehabilitación del parque central</div>
-            <div class="text-sm text-gray-600">Estado: En ejecución (75% completado)</div>
-          </li>
-          <li class="border-l-4 border-[#1B8A5A] pl-4">
-            <div class="font-semibold">Mejora del alumbrado público</div>
-            <div class="text-sm text-gray-600">Estado: En ejecución (60% completado)</div>
-          </li>
-          <li class="border-l-4 border-amber-500 pl-4">
-            <div class="font-semibold">Programa de reciclaje</div>
-            <div class="text-sm text-gray-600">Estado: Planificación</div>
-          </li>
-        </ul>
-        <a href="#" class="mt-4 inline-block text-[#1F4B99] text-sm font-medium">Ver todos los proyectos →</a>
-      </div>
-    </div>
+        <div class="card card-elmirador mb-4">
+          <div class="card-body">
+            <h3 class="h5 text-primario mb-4">Actas y documentos</h3>
+            <div class="row g-3">
+              <div class="col-md-4">
+                <a href="#" class="documento-tile">
+                  <div class="fw-medium mb-1">Acta de asamblea - Nov 2024</div>
+                  <div class="small text-secondary">PDF • 245 KB</div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="#" class="documento-tile">
+                  <div class="fw-medium mb-1">Presupuesto detallado 2024</div>
+                  <div class="small text-secondary">PDF • 1.2 MB</div>
+                </a>
+              </div>
+              <div class="col-md-4">
+                <a href="#" class="documento-tile">
+                  <div class="fw-medium mb-1">Reglamento interno</div>
+                  <div class="small text-secondary">PDF • 890 KB</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-    <div class="bg-white rounded-2xl shadow p-6 mb-8">
-      <h3 class="text-xl font-semibold mb-6 text-[#1F4B99]">Actas y documentos</h3>
-      <div class="grid md:grid-cols-3 gap-4">
-        <a href="#" class="p-4 border rounded-xl hover:shadow transition-shadow">
-          <div class="font-medium mb-1">Acta de asamblea - Nov 2024</div>
-          <div class="text-xs text-gray-500">PDF • 245 KB</div>
-        </a>
-        <a href="#" class="p-4 border rounded-xl hover:shadow transition-shadow">
-          <div class="font-medium mb-1">Presupuesto detallado 2024</div>
-          <div class="text-xs text-gray-500">PDF • 1.2 MB</div>
-        </a>
-        <a href="#" class="p-4 border rounded-xl hover:shadow transition-shadow">
-          <div class="font-medium mb-1">Reglamento interno</div>
-          <div class="text-xs text-gray-500">PDF • 890 KB</div>
-        </a>
+        <div class="card card-elmirador">
+          <div class="card-body">
+            <h3 class="h5 text-primario mb-4">Órganos de gobierno</h3>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="fw-semibold mb-2">Comité directivo</div>
+                <ul class="list-unstyled small text-secondary">
+                  <li>Presidente: [Nombre]</li>
+                  <li>Secretario: [Nombre]</li>
+                  <li>Tesorero: [Nombre]</li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <div class="fw-semibold mb-2">Comités de trabajo</div>
+                <ul class="list-unstyled small text-secondary">
+                  <li>Comité de seguridad</li>
+                  <li>Comité de obras</li>
+                  <li>Comité de eventos</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
+  </main>
 
-    <div class="bg-white rounded-2xl shadow p-6">
-      <h3 class="text-xl font-semibold mb-4 text-[#1F4B99]">Órganos de gobierno</h3>
-      <div class="grid md:grid-cols-2 gap-6">
-        <div>
-          <div class="font-semibold mb-2">Comité directivo</div>
-          <ul class="text-sm text-gray-600 space-y-1">
-            <li>Presidente: [Nombre]</li>
-            <li>Secretario: [Nombre]</li>
-            <li>Tesorero: [Nombre]</li>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 py-4">
+        <div class="col-md-6 col-lg-5">
+          <div class="footer-brand">Colonia El Mirador</div>
+          <p class="footer-text mt-2 mb-0">Transparencia, participación y desarrollo comunitario.</p>
+        </div>
+        <div class="col-6 col-md-3 col-lg-2">
+          <div class="footer-title">Enlaces</div>
+          <ul class="list-unstyled mb-0">
+            <li><a href="transparencia.html">Transparencia</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="contacto.html">Directorio</a></li>
           </ul>
         </div>
-        <div>
-          <div class="font-semibold mb-2">Comités de trabajo</div>
-          <ul class="text-sm text-gray-600 space-y-1">
-            <li>Comité de seguridad</li>
-            <li>Comité de obras</li>
-            <li>Comité de eventos</li>
-          </ul>
+        <div class="col-6 col-md-3 col-lg-4">
+          <div class="footer-title">Contacto</div>
+          <p class="footer-text mb-0 small">Centro comunitario, Calle [X], Colonia El Mirador.<br>Horario: Lun–Vie 9:00–17:00</p>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Footer -->
-  <footer class="bg-white border-t">
-    <div class="max-w-7xl mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
-      <div class="col-span-2">
-        <div class="font-semibold text-[#1F4B99]">Colonia El Mirador</div>
-        <p class="text-sm text-gray-600 mt-2">Transparencia, participación y desarrollo comunitario.</p>
-      </div>
-      <div>
-        <div class="font-medium mb-3">Enlaces</div>
-        <ul class="space-y-2 text-sm">
-          <li><a href="transparencia.html" class="hover:text-[#1F4B99]">Transparencia</a></li>
-          <li><a href="#" class="hover:text-[#1F4B99]">Proyectos</a></li>
-          <li><a href="contacto.html" class="hover:text-[#1F4B99]">Directorio</a></li>
-        </ul>
-      </div>
-      <div>
-        <div class="font-medium mb-3">Contacto</div>
-        <p class="text-sm text-gray-600">Centro comunitario, Calle [X], Colonia El Mirador.<br>Horario: Lun–Vie 9:00–17:00</p>
-      </div>
-    </div>
-    <div class="text-center text-xs text-gray-500 py-4 border-t">© 2025 Colonia El Mirador.</div>
+    <div class="footer-bottom">© 2025 Colonia El Mirador.</div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
