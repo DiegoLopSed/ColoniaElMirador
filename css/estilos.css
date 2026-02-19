@@ -4,13 +4,19 @@
  */
 
 :root {
-  --color-fondo: #EEF1F4;
-  --color-texto: #2B2B2B;
+  --color-fondo: #eef5f0;
+  --color-texto: #1e2f24;
   /* Paleta en verdes */
-  --color-primario: #0F6B3A; /* verde fuerte */
+  --color-primario: #0F6B3A;
   --color-primario-oscuro: #0B542E;
-  --color-verde: #79C99E; /* verde suave */
+  --color-verde: #79C99E;
+  --color-verde-claro: #5a9b6e;
   --color-blanco: #fff;
+  --color-texto-secundario: #4a6b52;
+  --color-borde: #c5ddce;
+  --color-borde-hover: #9fc4ad;
+  --color-fondo-suave: #e2efe6;
+  --color-focus: rgba(15, 107, 58, 0.25);
   --sombra-card: 0 1px 3px rgba(0,0,0,.08);
   --sombra-card-hover: 0 4px 12px rgba(0,0,0,.12);
   --radio: 1rem;
@@ -112,7 +118,7 @@ main {
 
 .site-header .navbar-brand .subtitle {
   font-size: 1.05rem;
-  color: #6c757d;
+  color: var(--color-texto-secundario);
   font-weight: 400;
 }
 
@@ -143,7 +149,7 @@ main {
 }
 
 .btn-reporta:hover {
-  background-color: #16734a;
+  background-color: var(--color-primario-oscuro);
   color: var(--color-blanco);
 }
 
@@ -177,7 +183,7 @@ main {
   margin-top: 0.35rem;
 }
 
-.hero-aviso .bullet { background: #f2ea00; }
+.hero-aviso .bullet { background: var(--color-verde); }
 
 /* Botones hero */
 .btn-hero-primario {
@@ -190,7 +196,7 @@ main {
 }
 
 .btn-hero-primario:hover {
-  background-color: #e8e8e8;
+  background-color: var(--color-fondo-suave);
   color: var(--color-primario);
 }
 
@@ -262,7 +268,7 @@ main {
 }
 
 .card-elmirador .card-text {
-  color: #6c757d;
+  color: var(--color-texto-secundario);
   font-size: 0.875rem;
 }
 
@@ -281,7 +287,7 @@ main {
 .tile-servicio {
   display: block;
   background: var(--color-blanco);
-  border: 1px solid #dee2e6;
+  border: 1px solid var(--color-borde);
   border-radius: var(--radio-lg);
   padding: 1.5rem;
   color: inherit;
@@ -291,7 +297,7 @@ main {
 
 .tile-servicio:hover {
   box-shadow: var(--sombra-card-hover);
-  border-color: #ced4da;
+  border-color: var(--color-borde-hover);
   color: inherit;
 }
 
@@ -303,7 +309,7 @@ main {
 }
 
 .tile-servicio .tile-desc {
-  color: #6c757d;
+  color: var(--color-texto-secundario);
   font-size: 0.875rem;
   margin: 0;
 }
@@ -341,7 +347,7 @@ main {
 }
 
 .evento-fecha.pasado {
-  background: #6c757d;
+  background: var(--color-texto-secundario);
 }
 
 /* CTA Reporta */
@@ -376,7 +382,7 @@ main {
 }
 
 .cta-reporta .btn-white:hover {
-  background: #e8e8e8;
+  background: var(--color-fondo-suave);
   color: var(--color-verde);
 }
 
@@ -394,7 +400,7 @@ main {
 }
 
 .site-footer .footer-text {
-  color: #6c757d;
+  color: var(--color-texto-secundario);
   font-size: 0.875rem;
 }
 
@@ -404,7 +410,7 @@ main {
 }
 
 .site-footer a {
-  color: #6c757d;
+  color: var(--color-texto-secundario);
   text-decoration: none;
   font-size: 0.875rem;
 }
@@ -416,7 +422,7 @@ main {
 .site-footer .footer-bottom {
   text-align: center;
   font-size: 0.75rem;
-  color: #6c757d;
+  color: var(--color-texto-secundario);
   padding: 1rem 0;
   margin-top: 2rem;
   border-top: 1px solid rgba(0,0,0,.08);
@@ -431,12 +437,12 @@ main {
 .form-elmirador .form-control,
 .form-elmirador .form-select {
   border-radius: var(--radio-lg);
-  border: 1px solid #dee2e6;
+  border: 1px solid var(--color-borde);
 }
 
 .form-elmirador .form-control:focus {
   border-color: var(--color-primario);
-  box-shadow: 0 0 0 0.2rem rgba(31, 75, 153, 0.25);
+  box-shadow: 0 0 0 0.2rem var(--color-focus);
 }
 
 .btn-enviar {
@@ -463,7 +469,7 @@ main {
 .bar-fill {
   height: 8px;
   border-radius: 999px;
-  background: #e9ecef;
+  background: var(--color-fondo-suave);
 }
 
 .bar-fill .fill {
@@ -477,12 +483,12 @@ main {
 }
 
 .proyecto-item.verde { border-left-color: var(--color-verde); }
-.proyecto-item.ambar { border-left-color: #f59e0b; }
+.proyecto-item.ambar { border-left-color: var(--color-verde-claro); }
 
 .documento-tile {
   display: block;
   padding: 1rem;
-  border: 1px solid #dee2e6;
+  border: 1px solid var(--color-borde);
   border-radius: var(--radio-lg);
   color: inherit;
   text-decoration: none;
