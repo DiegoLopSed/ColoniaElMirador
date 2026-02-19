@@ -5,17 +5,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Colonia El Mirador – Sitio Oficial</title>
   <meta name="description" content="Comunicados, servicios y participación ciudadana de la Colonia El Mirador.">
-  <link rel="icon" type="image/png" href="Fotos/Escudo_Col_Elmirador.png" />
-  <link rel="apple-touch-icon" href="Fotos/Escudo_Col_Elmirador.png" />
+  <link rel="icon" type="image/jpeg" href="Images/common/Logo_Oficial.jpeg" />
+  <link rel="apple-touch-icon" href="Images/common/Logo_Oficial.jpeg" />   
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/estilos.css" rel="stylesheet" />
 </head>
 <body>
+  <!-- Pantalla de carga -->
+  <div class="pantalla-carga" id="pantallaCarga">
+    <img src="Images/common/Logo_Oficial.jpeg" alt="Colonia El Mirador" class="pantalla-carga__logo">
+    <p class="pantalla-carga__texto">Construyendo el futuro</p>
+  </div>
+
   <header class="site-header">
     <nav class="navbar navbar-expand-md navbar-light">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
-          <img src="Fotos/Escudo_Col_Elmirador.png" alt="Escudo de la colonia" class="logo-escudo">
+          <img src="Images/common/Logo_Oficial.jpeg" alt="Colonia El Mirador" class="logo-escudo">
           <div>
             <span class="d-block">Colonia El Mirador</span>
             <span class="subtitle d-block">Sitio oficial de la comunidad</span>
@@ -29,8 +35,6 @@
             <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
             <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
             <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
-            <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
-            <li class="nav-item"><a class="nav-link" href="transparencia.html">Transparencia</a></li>
             <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           </ul>
           <a href="#reporta" class="btn btn-reporta ms-2 mt-2 mt-md-0">Reporta un problema</a>
@@ -56,15 +60,23 @@
               <ul class="list-unstyled mb-0">
                 <li class="d-flex gap-3 mb-3">
                   <span class="bullet bullet--verde"></span>
-                  <div><strong>Asamblea general:</strong> 22 de nov, 18:00, Centro comunitario.</div>
+                  <div><strong>Asamblea general:</strong> sábado 14 de febrero a las 6 pm, en casa de la sra. Xochitl.</div>
                 </li>
                 <li class="d-flex gap-3 mb-3">
                   <span class="bullet bullet--ambar"></span>
-                  <div><strong>Comunicado:</strong> Jornada de limpieza vecinal este sábado.</div>
+                  <div><strong>Comunicado:</strong> En común acuerdo con el Comisariado de bienes comunales, el consejo de vigilancia y la Lic. de la Procuraduría Agraria, se informa que por el momento no se entregarán las constancias de posesión. Hasta nuevo aviso.</div>
+                </li>
+                <li class="d-flex gap-3 mb-3">
+                  <span class="bullet bullet--azul"></span>
+                  <div><strong>Comunicado:</strong> Se suspenden los aclareos y quema de basura en los sitios/solar de la colonia.</div>
+                </li>
+                <li class="d-flex gap-3 mb-3">
+                  <span class="bullet bullet--verde"></span>
+                  <div><strong>Comunicado:</strong> Pasen a liquidar sus adeudos de cooperaciones para obtener su Constancia de no adeudo.</div>
                 </li>
                 <li class="d-flex gap-3">
                   <span class="bullet bullet--azul"></span>
-                  <div><strong>Obra:</strong> Mantenimiento en calle Jacarandas (del 10 al 15 de nov).</div>
+                  <div><strong>Obra:</strong> Tomar acuerdos sobre el costo de estudio de impacto ambiental.</div>
                 </li>
               </ul>
             </div>
@@ -82,20 +94,20 @@
         <div class="row g-4">
           <div class="col-md-6 col-lg-4">
             <article class="card card-elmirador h-100">
-              <img src="Fotos/fotos el mirador/2 faena ampliacion de camino para que pasen los postes/IMG-20240712-WA0006.jpeg" class="card-img-top" alt="">
+              <img src="Images/Noticias/Entrada_Principal.jpeg" class="card-img-top" alt="Terminación de la entrada principal">
               <div class="card-body">
-                <h4 class="card-title">Convocatoria a faena comunitaria</h4>
-                <p class="card-text">Este sábado nos reunimos para limpieza de áreas verdes.</p>
+                <h4 class="card-title">Terminación de la entrada principal</h4>
+                <p class="card-text">Con el apoyo del Lic. Mario Méndez (presidente del FEDEMO), que proporcionó la maquinaria, más faenas y cooperaciones de los colonos.</p>
                 <a href="noticias.html" class="link-mas">Leer más →</a>
               </div>
             </article>
           </div>
           <div class="col-md-6 col-lg-4">
             <article class="card card-elmirador h-100">
-              <img src="Fotos/fotos el mirador/fotos postes de luz/foto 1 inicio del primer poste.jpg" class="card-img-top" alt="">
+              <img src="Images/Electrica/Instalacion_electrica.jpg" class="card-img-top" alt="Conexión de la energía eléctrica">
               <div class="card-body">
-                <h4 class="card-title">Nueva luminaria instalada</h4>
-                <p class="card-text">Se reforzó el alumbrado en Av. Reforma.</p>
+                <h4 class="card-title">Conexión de la energía eléctrica</h4>
+                <p class="card-text">Gestión realizada por el Ing. Josué Jesús Escobar Aguilar, que tramitó por medio del programa federal FSUE. 2 años de espera, pero se logró la 1ra ampliación.</p>
                 <a href="noticias.html" class="link-mas">Leer más →</a>
               </div>
             </article>
@@ -104,77 +116,11 @@
             <article class="card card-elmirador h-100">
               <img src="Fotos/fotos el mirador/8 marcacion de calle alberto vargas merino/IMG-20250614-WA0002.jpg" class="card-img-top" alt="">
               <div class="card-body">
-                <h4 class="card-title">Aviso de seguridad vecinal</h4>
-                <p class="card-text">Recomendaciones del comité de seguridad.</p>
+                <h4 class="card-title">Inauguración de la calle y conexión de energía eléctrica</h4>
+                <p class="card-text">El 27 de enero de 2026 se inauguró la Entrada Principal y la conexión de la energía eléctrica, con vecinos, colonos, comité y comité de Bienes comunales.</p>
                 <a href="noticias.html" class="link-mas">Leer más →</a>
               </div>
             </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="servicios" class="bg-white py-5">
-      <div class="container">
-        <div class="section-title-wrap">
-          <h3 class="section-title">Servicios y trámites</h3>
-          <a href="servicios.html" class="link-ver-todos">Ver todos</a>
-        </div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-4">
-            <a href="servicios.html" class="tile-servicio">
-              <div class="tile-titulo">Reporte de alumbrado</div>
-              <p class="tile-desc">Fallas, postes caídos, solicitud de lámparas.</p>
-            </a>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <a href="servicios.html" class="tile-servicio">
-              <div class="tile-titulo">Limpieza y residuos</div>
-              <p class="tile-desc">Basura, escombro, puntos de acopio.</p>
-            </a>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <a href="servicios.html" class="tile-servicio">
-              <div class="tile-titulo">Seguridad vecinal</div>
-              <p class="tile-desc">Comités, alertas, recomendaciones.</p>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="eventos" class="py-5">
-      <div class="container">
-        <div class="section-title-wrap">
-          <h3 class="section-title">Próximos eventos</h3>
-          <a href="eventos.html" class="link-ver-todos">Ver todos</a>
-        </div>
-        <div class="row g-4">
-          <div class="col-md-6">
-            <div class="evento-card">
-              <div class="evento-fecha">
-                <div class="dia">22</div>
-                <div class="mes">NOV</div>
-              </div>
-              <div class="flex-grow-1">
-                <div class="fw-semibold">Asamblea general de vecinos</div>
-                <div class="small text-secondary">18:00 – Centro comunitario</div>
-                <a href="eventos.html" class="link-mas small d-inline-block mt-2">Ver detalles →</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="evento-card">
-              <div class="evento-fecha">
-                <div class="dia">30</div>
-                <div class="mes">NOV</div>
-              </div>
-              <div class="flex-grow-1">
-                <div class="fw-semibold">Jornada de limpieza</div>
-                <div class="small text-secondary">09:00 – Punto de reunión: parque</div>
-                <a href="eventos.html" class="link-mas small d-inline-block mt-2">Ver detalles →</a>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -188,8 +134,7 @@
             <p class="mb-0 opacity-90">Reporta baches, luminarias, residuos u otros incidentes.</p>
           </div>
           <div class="col-lg-4 text-lg-end">
-            <a href="#" class="btn btn-white me-2">Formulario</a>
-            <a href="https://wa.me/521XXXXXXXXXX" class="btn btn-cta-outline">WhatsApp</a>
+            <a href="https://wa.me/522211980049" class="btn btn-white" target="_blank" rel="noopener noreferrer">WhatsApp</a>
           </div>
         </div>
       </div>
@@ -212,8 +157,14 @@
           </ul>
         </div>
         <div class="col-6 col-md-3 col-lg-4">
-          <div class="footer-title">Contacto</div>
-          <p class="footer-text mb-0 small">Centro comunitario, Calle [X], Colonia El Mirador.<br>Horario: Lun–Vie 9:00–17:00</p>
+          <div class="footer-title">Información de contacto</div>
+          <p class="footer-text mb-0 small">
+            <strong>Comité de la Colonia El Mirador</strong><br>
+            Puedes pedir información en casa de la sra. Xochitl.<br>
+            De lunes a viernes de 6 a 8 pm.<br>
+            WhatsApp: <a href="https://wa.me/522211980049" class="text-decoration-none">22 11 98 00 49</a><br>
+            E-mail: <a href="mailto:contacto@elmiradortecomavaca.com" class="text-decoration-none">contacto@elmiradortecomavaca.com</a>
+          </p>
         </div>
       </div>
     </div>
@@ -221,5 +172,15 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    (function() {
+      var pantalla = document.getElementById('pantallaCarga');
+      if (pantalla) {
+        setTimeout(function() {
+          pantalla.classList.add('oculta');
+        }, 2500);
+      }
+    })();
+  </script>
 </body>
 </html>

@@ -6,9 +6,10 @@
 :root {
   --color-fondo: #EEF1F4;
   --color-texto: #2B2B2B;
-  --color-primario: #1F4B99;
-  --color-primario-oscuro: #1a3d7a;
-  --color-verde: #1B8A5A;
+  /* Paleta en verdes */
+  --color-primario: #0F6B3A; /* verde fuerte */
+  --color-primario-oscuro: #0B542E;
+  --color-verde: #79C99E; /* verde suave */
   --color-blanco: #fff;
   --sombra-card: 0 1px 3px rgba(0,0,0,.08);
   --sombra-card-hover: 0 4px 12px rgba(0,0,0,.12);
@@ -23,6 +24,71 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* Pantalla de carga (solo en página principal) */
+.pantalla-carga {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primario);
+  color: var(--color-blanco);
+  transition: opacity 0.6s ease, visibility 0.6s ease;
+}
+
+.pantalla-carga.oculta {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.pantalla-carga__logo {
+  width: min(180px, 45vw);
+  height: auto;
+  max-height: 200px;
+  object-fit: contain;
+  margin-bottom: 1.5rem;
+  animation: pantalla-carga-pulse 1.5s ease-in-out infinite;
+}
+
+.pantalla-carga__texto {
+  font-size: clamp(0.875rem, 3vw, 1.25rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.5;
+  max-width: 90%;
+}
+
+/* Tarjeta de información de contacto */
+.contacto-info-card .small {
+  font-size: 1.15rem;
+  line-height: 1.75;
+}
+
+.contacto-info-card .h5 {
+  font-size: 1.45rem;
+}
+
+/* Tarjeta de directorio en contacto */
+.directorio-card .fw-semibold {
+  font-size: 1.1rem;
+}
+
+.directorio-card .small,
+.directorio-card .text-secondary {
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+@keyframes pantalla-carga-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.9; transform: scale(1.02); }
 }
 
 main {
@@ -40,8 +106,12 @@ main {
   font-weight: 600;
 }
 
+.site-header .navbar-brand > div > span:first-child {
+  font-size: 1.5rem;
+}
+
 .site-header .navbar-brand .subtitle {
-  font-size: 0.875rem;
+  font-size: 1.05rem;
   color: #6c757d;
   font-weight: 400;
 }
@@ -58,8 +128,8 @@ main {
 }
 
 .site-header .logo-escudo {
-  width: 40px;
-  height: 40px;
+  width: 56px;
+  height: 56px;
   object-fit: contain;
 }
 
@@ -107,9 +177,7 @@ main {
   margin-top: 0.35rem;
 }
 
-.hero-aviso .bullet--verde { background: #6ee7b7; }
-.hero-aviso .bullet--ambar { background: #fcd34d; }
-.hero-aviso .bullet--azul { background: #7dd3fc; }
+.hero-aviso .bullet { background: #f2ea00; }
 
 /* Botones hero */
 .btn-hero-primario {
