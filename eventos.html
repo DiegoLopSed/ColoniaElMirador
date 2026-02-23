@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,28 +11,35 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/estilos.css" rel="stylesheet" />
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="navbar navbar-expand-md navbar-light">
+
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
-          <img src="Images/common/Logo_Oficial.jpeg" alt="Colonia El Mirador" class="logo-escudo">
-          <div>
-            <span class="d-block">Colonia El Mirador</span>
-            <span class="subtitle d-block">Sitio oficial de la comunidad</span>
-          </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <a class="navbar-brand navbar-brand-compact d-lg-none" href="index.html">Colonia El Mirador</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+          aria-controls="navPrincipal" aria-expanded="false" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navPrincipal">
-          <ul class="navbar-nav ms-auto gap-1 gap-md-3">
+          <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+            <img src="Images/common/Logo_Oficial.jpeg" alt="Colonia El Mirador" class="logo-escudo">
+            <div>
+              <span class="d-block">Colonia El Mirador</span>
+              <span class="subtitle d-block">Construyendo el futuro</span>
+            </div>
+          </a>
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1 gap-lg-2">
             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+            <li class="nav-item"><a class="nav-link" href="noticias.html">Comunicados</a></li>
+            <li class="nav-item"><a class="nav-link active" href="eventos.html">Eventos</a></li>
+            <li class="nav-item"><a class="nav-link" href="avance.html">Avance</a></li>
             <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="patrocinadores.html">Patrocinadores</a></li>
             <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           </ul>
-          <a href="index.html#reporta" class="btn btn-reporta ms-2 mt-2 mt-md-0">Reporta un problema</a>
+          <a href="index.html#reporta" class="btn btn-reporta ms-lg-3 mt-3 mt-lg-0">Reporta un problema</a>
         </div>
       </div>
     </nav>
@@ -39,134 +47,150 @@
 
   <main>
     <section class="hero">
-      <div class="container py-4">
-        <h2 class="display-6">Próximos Eventos</h2>
-        <p class="lead mb-0">Participa en las actividades y eventos de la colonia.</p>
+      <div class="container py-2">
+        <div class="row justify-content-center text-center">
+          <div class="col-12 col-md-9 col-lg-7">
+            <p class="section-eyebrow mb-2" style="color:rgba(255,255,255,.7)">Calendario comunitario</p>
+            <h1 class="hero-titulo mb-3">Eventos y actividades</h1>
+            <p class="hero-subtitulo">Asambleas, faenas, reuniones y actividades de la colonia en desarrollo.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="py-5">
       <div class="container">
-        <div class="row g-4 mb-5">
-          <div class="col-md-6">
-            <div class="evento-card">
-              <div class="evento-fecha">
-                <div class="dia">14</div>
-                <div class="mes">FEB</div>
-              </div>
-              <div class="flex-grow-1">
-                <div class="fw-semibold mb-1">Asamblea general de vecinos</div>
-                <div class="small text-secondary mb-2">6 pm – Casa de la sra. Xochitl</div>
-                <p class="small text-secondary mb-3">Sábado 14 de febrero. Reunión para tratar temas importantes de la colonia, incluyendo presupuesto, proyectos y propuestas vecinales.</p>
-                <a href="#" class="link-mas small">Ver detalles →</a>
-              </div>
+
+        <!-- Próximos -->
+        <div class="mb-5">
+          <div class="section-title-wrap mb-4">
+            <div>
+              <p class="section-eyebrow">Calendario</p>
+              <h2 class="section-title">Próximos eventos</h2>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="evento-card">
-              <div class="evento-fecha">
-                <div class="dia">30</div>
-                <div class="mes">NOV</div>
-              </div>
-              <div class="flex-grow-1">
-                <div class="fw-semibold mb-1">Jornada de limpieza</div>
-                <div class="small text-secondary mb-2">09:00 – Punto de reunión: parque</div>
-                <p class="small text-secondary mb-3">Actividad comunitaria para mantener limpias las áreas verdes y espacios públicos de la colonia. Se proporcionarán herramientas.</p>
-                <a href="#" class="link-mas small">Ver detalles →</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="evento-card">
-              <div class="evento-fecha">
-                <div class="dia">5</div>
-                <div class="mes">DIC</div>
-              </div>
-              <div class="flex-grow-1">
-                <div class="fw-semibold mb-1">Feria navideña</div>
-                <div class="small text-secondary mb-2">16:00 – Plaza central</div>
-                <p class="small text-secondary mb-3">Celebración navideña con puestos de comida, artesanías y actividades para toda la familia. ¡Ven y disfruta con tus vecinos!</p>
-                <a href="#" class="link-mas small">Ver detalles →</a>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div class="evento-card">
+                <div class="evento-fecha">
+                  <div class="dia">—</div>
+                  <div class="mes">—</div>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="fw-semibold mb-1">Acuerdos sobre el costo de estudio de impacto ambiental</div>
+                  <div class="small text-secondary mb-0">Tema a tratar en asamblea.</div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-6">
-            <div class="evento-card">
-              <div class="evento-fecha">
-                <div class="dia">12</div>
-                <div class="mes">DIC</div>
-              </div>
-              <div class="flex-grow-1">
-                <div class="fw-semibold mb-1">Taller de primeros auxilios</div>
-                <div class="small text-secondary mb-2">10:00 – Centro comunitario</div>
-                <p class="small text-secondary mb-3">Taller gratuito impartido por profesionales de la salud. Aprende técnicas básicas de primeros auxilios para emergencias.</p>
-                <a href="#" class="link-mas small">Ver detalles →</a>
+            <div class="col-md-6">
+              <div class="evento-card" style="border: 1px dashed var(--bs-secondary-border, #dee2e6);">
+                <div class="flex-grow-1 text-center py-3">
+                  <p class="text-secondary mb-0 fw-medium">En espera de próximos eventos</p>
+                  <p class="small text-secondary mb-0 mt-1">Las fechas se publicarán aquí y en Comunicados.</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <h3 class="section-title mb-4">Eventos recientes</h3>
-        <div class="row g-4">
-          <div class="col-md-6">
-            <div class="evento-card opacity-75">
-              <div class="evento-fecha pasado">
-                <div class="dia">15</div>
-                <div class="mes">NOV</div>
-              </div>
-              <div class="flex-grow-1">
-                <div class="fw-semibold mb-1">Reunión del comité de seguridad</div>
-                <div class="small text-secondary">17:00 – Centro comunitario</div>
-              </div>
+        <!-- Realizados -->
+        <div>
+          <div class="section-title-wrap mb-4">
+            <div>
+              <p class="section-eyebrow">Historial</p>
+              <h2 class="section-title">Eventos realizados</h2>
             </div>
           </div>
-          <div class="col-md-6">
-            <div class="evento-card opacity-75">
-              <div class="evento-fecha pasado">
-                <div class="dia">8</div>
-                <div class="mes">NOV</div>
+          <div class="row g-4">
+            <div class="col-md-6 col-lg-5">
+              <div class="evento-card opacity-75">
+                <div class="evento-fecha pasado">
+                  <div class="dia">14</div>
+                  <div class="mes">FEB</div>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="fw-semibold mb-1">Asamblea General</div>
+                  <div class="small text-secondary">Sábado 14 de febrero a las 6 pm, en casa de la Sra. Xochitl (casa roja). 2025</div>
+                </div>
               </div>
-              <div class="flex-grow-1">
-                <div class="fw-semibold mb-1">Inauguración del parque rehabilitado</div>
-                <div class="small text-secondary">11:00 – Parque central</div>
+            </div>
+            <div class="col-md-6 col-lg-5">
+              <div class="evento-card opacity-75">
+                <div class="evento-fecha pasado">
+                  <div class="dia">27</div>
+                  <div class="mes">ENE</div>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="fw-semibold mb-1">Inauguración de la Calle y Conexión de Energía Eléctrica</div>
+                  <div class="small text-secondary">27 de enero de 2026</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
     </section>
   </main>
 
+  <!-- ========= FOOTER ========= -->
   <footer class="site-footer">
     <div class="container">
-      <div class="row g-4 py-4">
-        <div class="col-md-6 col-lg-5">
-          <div class="footer-brand">Colonia El Mirador</div>
-          <p class="footer-text mt-2 mb-0">Transparencia, participación y desarrollo comunitario.</p>
+      <div class="row g-4 py-5 align-items-start">
+
+        <!-- Marca -->
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="footer-brand mb-2">Colonia El Mirador</div>
+          <p class="footer-text mb-3">Colonia en desarrollo. Transparencia, participación y trabajo comunitario.</p>
+          <a href="https://wa.me/522211980049" class="btn btn-footer-wa" target="_blank" rel="noopener noreferrer">
+            WhatsApp
+          </a>
         </div>
-        <div class="col-6 col-md-3 col-lg-2">
-          <div class="footer-title">Enlaces</div>
-          <ul class="list-unstyled mb-0">
-            <li><a href="transparencia.html">Transparencia</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="contacto.html">Directorio</a></li>
-          </ul>
+
+        <!-- Separador vertical solo en md+ -->
+        <div class="col-md-1 d-none d-md-flex justify-content-center">
+          <div class="footer-divider"></div>
         </div>
-        <div class="col-6 col-md-3 col-lg-4">
-          <div class="footer-title">Información de contacto</div>
-          <p class="footer-text mb-0 small">
-            <strong>Comité de la Colonia El Mirador</strong><br>
-            Puedes pedir información en casa de la sra. Xochitl.<br>
-            De lunes a viernes de 6 a 8 pm.<br>
-            WhatsApp: <a href="https://wa.me/522211980049" class="text-decoration-none">22 11 98 00 49</a><br>
-            E-mail: <a href="mailto:contacto@elmiradortecomavaca.com" class="text-decoration-none">contacto@elmiradortecomavaca.com</a>
-          </p>
+
+        <!-- Contacto -->
+        <div class="col-12 col-md-6 col-lg-7">
+          <div class="footer-title mb-3">Información de contacto</div>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <p class="footer-text small mb-1"><strong>Comité de la Colonia El Mirador</strong></p>
+              <p class="footer-text small mb-0">
+                Atención: Lun–vie, 6–8 pm
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <p class="footer-text small mb-1">
+                <a href="https://wa.me/522211980049" class="text-decoration-none">22 11 98 00 49</a>
+              </p>
+              <p class="footer-text small mb-1">
+                <a href="mailto:contacto@elmiradortecomavaca.com"
+                  class="text-decoration-none">contacto@elmiradortecomavaca.com</a>
+              </p>
+            </div>
+          </div>
         </div>
+
       </div>
     </div>
-    <div class="footer-bottom">© 2025 Colonia El Mirador.</div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <span>© 2025 Colonia El Mirador. Todos los derechos reservados.</span>
+        <nav aria-label="Enlaces del pie de página">
+          <a href="noticias.html">Comunicados</a> ·
+          <a href="eventos.html">Eventos</a> ·
+          <a href="avance.html">Avance</a> ·
+          <a href="patrocinadores.html">Patrocinadores</a> ·
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
