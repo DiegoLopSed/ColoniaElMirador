@@ -1,0 +1,78 @@
+/**
+ * Footer – Colonia El Mirador
+ */
+
+.site-footer {
+  background: var(--color-blanco);
+  border-top: 1px solid rgba(0, 0, 0, .08);
+  padding: 2.5rem 0 0;
+  margin-top: auto;
+}
+
+.site-footer .footer-brand {
+  color: var(--color-primario);
+  font-weight: 600;
+}
+
+.site-footer .footer-text {
+  color: var(--color-texto-secundario);
+  font-size: 0.875rem;
+}
+
+.site-footer .footer-title {
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.site-footer a {
+  color: var(--color-texto-secundario);
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+
+.site-footer a:hover {
+  color: var(--color-primario);
+}
+
+.site-footer .footer-bottom {
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--color-texto-secundario);
+  padding: 1rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, .08);
+}
+
+.footer-divider {
+  width: 1px;
+  background: var(--color-borde);
+  height: 100%;
+  min-height: 120px;
+}
+
+.btn-footer-wa {
+  display: inline-block;
+  background: var(--color-primario);
+  color: var(--color-blanco) !important;
+  border-radius: var(--radio-lg);
+  padding: 0.45rem 1.1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.2s, color 0.2s;
+}
+
+.site-footer .btn-footer-wa:hover {
+  background: var(--color-primario-oscuro);
+  color: var(--color-blanco) !important;
+}
+
+.site-footer .footer-bottom nav a {
+  color: var(--color-texto-secundario);
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+
+.site-footer .footer-bottom nav a:hover {
+  color: var(--color-primario);
+}
