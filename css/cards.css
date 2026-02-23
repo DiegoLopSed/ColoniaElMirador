@@ -1,0 +1,243 @@
+/**
+ * Cards – Colonia El Mirador
+ * card-elmirador, card-comunicado, tile-servicio, evento-card, avance-item
+ */
+
+.card-elmirador {
+  background: var(--color-blanco);
+  border: none;
+  border-radius: var(--radio-lg);
+  box-shadow: var(--sombra-card);
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+}
+
+.card-elmirador:hover {
+  box-shadow: var(--sombra-card-hover);
+}
+
+.card-elmirador .card-img-top {
+  aspect-ratio: 16/9;
+  object-fit: cover;
+  border-radius: var(--radio) var(--radio) 0 0;
+}
+
+.card-elmirador .card-title {
+  color: var(--color-texto);
+  font-weight: 600;
+}
+
+.card-elmirador .card-text {
+  color: var(--color-texto-secundario);
+  font-size: 0.875rem;
+}
+
+.card-elmirador .link-mas {
+  color: var(--color-primario);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.card-elmirador .link-mas:hover {
+  color: var(--color-primario-oscuro);
+  text-decoration: underline;
+}
+
+.card-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-primario);
+  background: var(--color-fondo-suave);
+  border-radius: 999px;
+  padding: 0.2rem 0.65rem;
+}
+
+/* Card de comunicado */
+.card-comunicado {
+  background: var(--color-blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-lg);
+  padding: 1.25rem 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.card-comunicado:hover {
+  box-shadow: var(--sombra-card-hover);
+  border-color: var(--color-borde-hover);
+}
+
+.card-comunicado .card-comunicado-fecha {
+  font-size: 0.75rem;
+  color: var(--color-primario);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  margin-bottom: 0.5rem;
+}
+
+.card-comunicado .card-comunicado-titulo {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-texto);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.card-comunicado .card-comunicado-texto {
+  font-size: 0.875rem;
+  color: var(--color-texto-secundario);
+  line-height: 1.5;
+  margin: 0;
+  flex-grow: 1;
+}
+
+/* Card comunicado con galería (clic para abrir modal) */
+.card-comunicado.card-comunicado-galeria {
+  cursor: pointer;
+}
+.card-comunicado-galeria .card-comunicado-galeria-label {
+  font-size: 0.8rem;
+  color: var(--color-primario);
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+/* Carrusel dentro del modal de galería */
+.modal-body .carousel-item img {
+  max-height: 70vh;
+  object-fit: contain;
+  background: #111;
+}
+.modal-body .carousel {
+  background: #111;
+}
+
+/* Tile de servicio */
+.tile-servicio {
+  display: block;
+  background: var(--color-blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-lg);
+  padding: 1.5rem;
+  color: inherit;
+  text-decoration: none;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.tile-servicio:hover {
+  box-shadow: var(--sombra-card-hover);
+  border-color: var(--color-borde-hover);
+  color: inherit;
+}
+
+.tile-servicio .tile-titulo {
+  color: var(--color-primario);
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+}
+
+.tile-servicio .tile-desc {
+  color: var(--color-texto-secundario);
+  font-size: 0.875rem;
+  margin: 0;
+}
+
+/* Card de evento */
+.evento-card {
+  background: var(--color-blanco);
+  border-radius: var(--radio-lg);
+  box-shadow: var(--sombra-card);
+  padding: 1.25rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.evento-fecha {
+  background: var(--color-primario);
+  color: var(--color-blanco);
+  border-radius: var(--radio);
+  padding: 0.75rem 1rem;
+  text-align: center;
+  flex-shrink: 0;
+  min-width: 70px;
+}
+
+.evento-fecha .dia {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.evento-fecha .mes {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+}
+
+.evento-fecha.pasado {
+  background: var(--color-texto-secundario);
+}
+
+/* Avance item */
+.avance-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: var(--color-blanco);
+  border: 1px solid var(--color-borde);
+  border-radius: var(--radio-lg);
+  padding: 1rem 1.25rem;
+  transition: box-shadow 0.2s ease;
+}
+
+.avance-item:hover {
+  box-shadow: var(--sombra-card-hover);
+}
+
+.avance-icono {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.avance-icono--ok {
+  background: #d4edda;
+  color: #155724;
+}
+
+.avance-icono--progreso {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.avance-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.65rem;
+  border-radius: 999px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.avance-badge--ok {
+  background: #d4edda;
+  color: #155724;
+}
+
+.avance-badge--progreso {
+  background: #fff3cd;
+  color: #856404;
+}
