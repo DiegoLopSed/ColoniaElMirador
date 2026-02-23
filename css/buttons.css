@@ -1,0 +1,82 @@
+/**
+ * Botones – Colonia El Mirador
+ */
+
+.btn-reporta {
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+  border: none;
+  border-radius: var(--radio-lg);
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+}
+
+.btn-reporta:hover {
+  background-color: var(--color-primario-oscuro);
+  color: var(--color-blanco);
+}
+
+.btn-hero-primario {
+  background-color: var(--color-blanco);
+  color: var(--color-primario);
+  border-radius: var(--radio-lg);
+  padding: 0.6rem 1.25rem;
+  font-weight: 500;
+  border: none;
+}
+
+.btn-hero-primario:hover {
+  background-color: var(--color-fondo-suave);
+  color: var(--color-primario);
+}
+
+.btn-hero-outline {
+  background: transparent;
+  color: var(--color-blanco);
+  border: 1px solid rgba(255, 255, 255, .6);
+  border-radius: var(--radio-lg);
+  padding: 0.6rem 1.25rem;
+  font-weight: 500;
+}
+
+.btn-hero-outline:hover {
+  color: var(--color-blanco);
+  border-color: rgba(255, 255, 255, .9);
+  background: rgba(255, 255, 255, .1);
+}
+
+/* CTA Reporta */
+.cta-reporta {
+  background-color: var(--color-verde);
+  color: var(--color-blanco);
+  padding: 3rem 0;
+}
+
+.cta-reporta .btn-cta-outline {
+  color: var(--color-blanco);
+  border: 1px solid rgba(255, 255, 255, .7);
+  border-radius: var(--radio-lg);
+  padding: 0.6rem 1.25rem;
+  font-weight: 500;
+  background: transparent;
+}
+
+.cta-reporta .btn-cta-outline:hover {
+  background: rgba(255, 255, 255, .15);
+  color: var(--color-blanco);
+  border-color: rgba(255, 255, 255, .9);
+}
+
+.cta-reporta .btn-white {
+  background: var(--color-blanco);
+  color: var(--color-verde);
+  border: none;
+  border-radius: var(--radio-lg);
+  padding: 0.6rem 1.25rem;
+  font-weight: 500;
+}
+
+.cta-reporta .btn-white:hover {
+  background: var(--color-fondo-suave);
+  color: var(--color-verde);
+}
