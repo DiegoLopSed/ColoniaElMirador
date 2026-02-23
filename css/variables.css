@@ -1,0 +1,23 @@
+/**
+ * Variables – Colonia El Mirador
+ * Colores, sombras y radios usados en el resto de hojas
+ */
+
+:root {
+  --color-fondo: #eef5f0;
+  --color-texto: #1e2f24;
+  --color-primario: #0F6B3A;
+  --color-primario-oscuro: #0B542E;
+  --color-verde: #79C99E;
+  --color-verde-claro: #5a9b6e;
+  --color-blanco: #fff;
+  --color-texto-secundario: #4a6b52;
+  --color-borde: #c5ddce;
+  --color-borde-hover: #9fc4ad;
+  --color-fondo-suave: #e2efe6;
+  --color-focus: rgba(15, 107, 58, 0.25);
+  --sombra-card: 0 1px 3px rgba(0, 0, 0, .08);
+  --sombra-card-hover: 0 4px 12px rgba(0, 0, 0, .12);
+  --radio: 1rem;
+  --radio-lg: 1.25rem;
+}

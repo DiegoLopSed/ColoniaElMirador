@@ -1,0 +1,15 @@
+/**
+ * Utilidades – Colonia El Mirador
+ */
+
+.text-primario {
+  color: var(--color-primario);
+}
+
+.bg-primario {
+  background-color: var(--color-primario);
+}
+
+.bg-verde {
+  background-color: var(--color-verde);
+}
