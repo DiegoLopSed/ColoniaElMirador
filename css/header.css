@@ -1,0 +1,72 @@
+/**
+ * Header y navegación – Colonia El Mirador
+ */
+
+.site-header {
+  background-color: var(--color-blanco);
+  border-bottom: 1px solid rgba(0, 0, 0, .08);
+}
+
+.site-header .navbar-brand {
+  color: var(--color-primario);
+  font-weight: 600;
+}
+
+.site-header .navbar-brand > div > span:first-child {
+  font-size: 1.85rem;
+}
+
+.site-header .navbar-brand .subtitle {
+  font-size: 1.1rem;
+  color: var(--color-texto-secundario);
+  font-weight: 400;
+}
+
+.site-header .nav-link {
+  color: var(--color-texto);
+  font-weight: 500;
+  padding: 0.5rem 0.75rem;
+}
+
+.site-header .nav-link:hover,
+.site-header .nav-link.active {
+  color: var(--color-primario);
+}
+
+.site-header .logo-escudo {
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+}
+
+/* Marca compacta en barra (solo móvil): evita logo grande arriba del menú */
+.site-header .navbar-brand-compact {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--color-primario);
+  padding: 0.25rem 0;
+}
+
+/* Logo completo dentro del menú colapsable: en móvil se muestra al abrir el menú */
+@media (max-width: 991.98px) {
+  .site-header .navbar-collapse .navbar-brand:not(.navbar-brand-compact) {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    justify-content: center;
+    text-align: center;
+  }
+  .site-header .navbar-collapse .navbar-brand:not(.navbar-brand-compact) > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .site-header .navbar-collapse .navbar-brand .logo-escudo {
+    width: 72px;
+    height: 72px;
+  }
+  .site-header .navbar-collapse .navbar-brand > div > span:first-child {
+    font-size: 1.35rem;
+  }
+}
