@@ -1,0 +1,39 @@
+/**
+ * Listas – Colonia El Mirador
+ * Comunicados (lista de texto)
+ */
+
+.list-comunicados {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.comunicado-item {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-borde);
+}
+
+.comunicado-item:last-child {
+  border-bottom: none;
+}
+
+.comunicado-item .comunicado-fecha {
+  font-size: 0.8rem;
+  color: var(--color-texto-secundario);
+  margin-bottom: 0.25rem;
+}
+
+.comunicado-item .comunicado-titulo {
+  font-weight: 600;
+  color: var(--color-texto);
+  margin-bottom: 0.35rem;
+  font-size: 1rem;
+}
+
+.comunicado-item .comunicado-texto {
+  font-size: 0.9rem;
+  color: var(--color-texto-secundario);
+  line-height: 1.5;
+  margin: 0;
+}
