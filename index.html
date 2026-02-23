@@ -1,182 +1,481 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Colonia El Mirador – Sitio Oficial</title>
-  <meta name="description" content="Comunicados, servicios y participación ciudadana de la Colonia El Mirador.">
+  <meta name="description"
+    content="Colonia El Mirador, Tecómavaca. Colonia en desarrollo: comunicados, eventos, avance y servicios.">
   <link rel="icon" type="image/jpeg" href="Images/common/Logo_Oficial.jpeg" />
-  <link rel="apple-touch-icon" href="Images/common/Logo_Oficial.jpeg" />   
+  <link rel="apple-touch-icon" href="Images/common/Logo_Oficial.jpeg" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/estilos.css" rel="stylesheet" />
 </head>
+
 <body>
-  <!-- Pantalla de carga -->
 
-
-  <header class="site-header">
-    <nav class="navbar navbar-expand-md navbar-light">
+  <!-- ========= NAVBAR ========= -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
-          <img src="Images/common/Logo_Oficial.jpeg" alt="Colonia El Mirador" class="logo-escudo">
-          <div>
-            <span class="d-block">Colonia El Mirador</span>
-            <span class="subtitle d-block">Sitio oficial de la comunidad</span>
-          </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <a class="navbar-brand navbar-brand-compact d-lg-none" href="index.html">Colonia El Mirador</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+          aria-controls="navPrincipal" aria-expanded="false" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navPrincipal">
-          <ul class="navbar-nav ms-auto gap-1 gap-md-3">
+          <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+            <img src="Images/common/Logo_Oficial.jpeg" alt="Colonia El Mirador" class="logo-escudo">
+            <div>
+              <span class="d-block">Colonia El Mirador</span>
+              <span class="subtitle d-block">Construyendo el futuro</span>
+            </div>
+          </a>
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1 gap-lg-2">
             <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link" href="noticias.html">Noticias</a></li>
+            <li class="nav-item"><a class="nav-link" href="noticias.html">Comunicados</a></li>
+            <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+            <li class="nav-item"><a class="nav-link" href="avance.html">Avance</a></li>
             <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="patrocinadores.html">Patrocinadores</a></li>
             <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           </ul>
-          <a href="#reporta" class="btn btn-reporta ms-2 mt-2 mt-md-0">Reporta un problema</a>
+          <a href="https://wa.me/522211980049" class="btn btn-reporta ms-lg-3 mt-3 mt-lg-0" target="_blank"
+            rel="noopener noreferrer">Reporta un problema</a>
         </div>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <div class="container">
-        <div class="row align-items-center g-4">
-          <div class="col-lg-6">
-            <h2 class="display-6">Información clara. Servicios cercanos. Participación real.</h2>
-            <p class="lead">Consulta comunicados, próximos eventos y reporta incidencias de tu colonia.</p>
-            <div class="d-flex flex-wrap gap-2 mt-4">
-              <a href="noticias.html" class="btn btn-hero-primario">Ver noticias</a>
-              <a href="servicios.html" class="btn btn-hero-outline">Servicios</a>
+
+    <!-- ========= HERO (carrusel de mensajes) ========= -->
+    <section class="hero hero-carousel">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container py-lg-2">
+              <div class="row justify-content-center text-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                  <h1 class="hero-titulo mb-3">Bienvenidos a<br class="d-none d-sm-block"> Colonia El Mirador</h1>
+                  <p class="hero-subtitulo hero-lema mb-4">Construyendo el futuro</p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="col-lg-6">
-            <div class="hero-aviso">
-              <ul class="list-unstyled mb-0">
-                <li class="d-flex gap-3 mb-3">
-                  <span class="bullet bullet--verde"></span>
-                  <div><strong>Asamblea general:</strong> sábado 14 de febrero a las 6 pm, en casa de la sra. Xochitl.</div>
-                </li>
-                <li class="d-flex gap-3 mb-3">
-                  <span class="bullet bullet--ambar"></span>
-                  <div><strong>Comunicado:</strong> En común acuerdo con el Comisariado de bienes comunales, el consejo de vigilancia y la Lic. de la Procuraduría Agraria, se informa que por el momento no se entregarán las constancias de posesión. Hasta nuevo aviso.</div>
-                </li>
-                <li class="d-flex gap-3 mb-3">
-                  <span class="bullet bullet--azul"></span>
-                  <div><strong>Comunicado:</strong> Se suspenden los aclareos y quema de basura en los sitios/solar de la colonia.</div>
-                </li>
-                <li class="d-flex gap-3 mb-3">
-                  <span class="bullet bullet--verde"></span>
-                  <div><strong>Comunicado:</strong> Pasen a liquidar sus adeudos de cooperaciones para obtener su Constancia de no adeudo.</div>
-                </li>
-                <li class="d-flex gap-3">
-                  <span class="bullet bullet--azul"></span>
-                  <div><strong>Obra:</strong> Tomar acuerdos sobre el costo de estudio de impacto ambiental.</div>
-                </li>
-              </ul>
+          <div class="carousel-item">
+            <div class="container py-lg-2">
+              <div class="row justify-content-center text-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                  <h1 class="hero-titulo mb-3">¿Quieres aparecer aquí?</h1>
+                  <p class="hero-subtitulo mb-4">Sé patrocinador y destaca en nuestra comunidad.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container py-lg-2">
+              <div class="row justify-content-center text-center">
+                <div class="col-12 col-md-10 col-lg-8">
+                  <h1 class="hero-titulo mb-3">Banner personal para patrocinadores</h1>
+                  <p class="hero-subtitulo mb-4">Los patrocinadores nivel Árbol en adelante tendrán un banner personal aquí.</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="noticias" class="py-5">
+    <!-- ========= CIFRAS ========= -->
+    <section class="cifras-bar py-4">
       <div class="container">
-        <div class="section-title-wrap">
-          <h3 class="section-title">Noticias y comunicados</h3>
-          <a href="noticias.html" class="link-ver-todos">Ver todas</a>
+        <div class="row g-3 text-center justify-content-center cifras-row">
+          <div class="col-6 col-md">
+            <div class="cifra-item">
+              <div class="cifra-num">2</div>
+              <div class="cifra-label">Obras completadas</div>
+            </div>
+          </div>
+          <div class="col-6 col-md">
+            <div class="cifra-item">
+              <div class="cifra-num">3</div>
+              <div class="cifra-label">Proyectos en curso</div>
+            </div>
+          </div>
+          <div class="col-6 col-md">
+            <div class="cifra-item">
+              <div class="cifra-num">0</div>
+              <div class="cifra-label">Patrocinadores</div>
+            </div>
+          </div>
+          <div class="col-6 col-md">
+            <div class="cifra-item">
+              <div class="cifra-num">2026</div>
+              <div class="cifra-label">Año de inauguración</div>
+            </div>
+          </div>
+          <div class="col-6 col-md">
+            <div class="cifra-item" id="cifra-visitas">
+              <div class="cifra-num" id="visitas-num" aria-live="polite">—</div>
+              <div class="cifra-label">Visitas al sitio</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= NOTICIAS Y COMUNICADOS (resumen) ========= -->
+    <section id="comunicados" class="py-5">
+      <div class="container">
+        <div class="section-title-wrap mb-4">
+          <div>
+            <p class="section-eyebrow">Lo más reciente</p>
+            <h2 class="section-title">Noticias y comunicados</h2>
+          </div>
+          <a href="noticias.html" class="link-ver-todos d-none d-sm-inline">Ver todos →</a>
         </div>
         <div class="row g-4">
-          <div class="col-md-6 col-lg-4">
-            <article class="card card-elmirador h-100">
-              <img src="Images/Noticias/Entrada_Principal.jpeg" class="card-img-top" alt="Terminación de la entrada principal">
-              <div class="card-body">
-                <h4 class="card-title">Terminación de la entrada principal</h4>
-                <p class="card-text">Con el apoyo del Lic. Mario Méndez (presidente del FEDEMO), que proporcionó la maquinaria, más faenas y cooperaciones de los colonos.</p>
-                <a href="noticias.html" class="link-mas">Leer más →</a>
-              </div>
+          <div class="col-sm-6 col-lg-4">
+            <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalEntradaPrincipal" aria-label="Ver galería: Terminación de la Entrada Principal">
+              <div class="card-comunicado-fecha">Obras</div>
+              <h3 class="card-comunicado-titulo">Terminación de la Entrada Principal con apoyo del Lic. Mario Méndez (FEDEMO)</h3>
+              <p class="card-comunicado-texto">Con el apoyo del Lic. Mario Méndez (FEDEMO), maquinaria, faenas y cooperaciones de los colonos.</p>
+              <span class="card-comunicado-galeria-label">Ver fotos →</span>
             </article>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <article class="card card-elmirador h-100">
-              <img src="Images/Electrica/Instalacion_electrica.jpg" class="card-img-top" alt="Conexión de la energía eléctrica">
-              <div class="card-body">
-                <h4 class="card-title">Conexión de la energía eléctrica</h4>
-                <p class="card-text">Gestión realizada por el Ing. Josué Jesús Escobar Aguilar, que tramitó por medio del programa federal FSUE. 2 años de espera, pero se logró la 1ra ampliación.</p>
-                <a href="noticias.html" class="link-mas">Leer más →</a>
-              </div>
+          <div class="col-sm-6 col-lg-4">
+            <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalConexionElectrica" aria-label="Ver galería: Conexión de Energía Eléctrica">
+              <div class="card-comunicado-fecha">Infraestructura</div>
+              <h3 class="card-comunicado-titulo">Conexión de Energía Eléctrica gestionada por Ing. Josué Jesús Escobar Aguilar (programa FSUE)</h3>
+              <p class="card-comunicado-texto">Gestión mediante el programa federal FSUE. Tras dos años se logró la primera ampliación.</p>
+              <span class="card-comunicado-galeria-label">Ver fotos →</span>
             </article>
           </div>
-          <div class="col-md-6 col-lg-4">
-            <article class="card card-elmirador h-100">
-              <img src="Images/Electrica/Instalacion_electrica.jpg" class="card-img-top" alt="Conexión de la energía eléctrica">
-                <h4 class="card-title">Inauguración de la calle y conexión de energía eléctrica</h4>
-                <p class="card-text">El 27 de enero de 2026 se inauguró la Entrada Principal y la conexión de la energía eléctrica, con vecinos, colonos, comité y comité de Bienes comunales.</p>
-                <a href="noticias.html" class="link-mas">Leer más →</a>
-              </div>
+          <div class="col-sm-6 col-lg-4">
+            <article class="card-comunicado">
+              <div class="card-comunicado-fecha">27 de enero de 2026</div>
+              <h3 class="card-comunicado-titulo">Detalles de inauguración del 27 de enero con invitados especiales</h3>
+              <p class="card-comunicado-texto">Inauguración Entrada Principal y conexión de energía eléctrica, con comité y Bienes comunales e invitados especiales.</p>
             </article>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <article class="card-comunicado">
+              <div class="card-comunicado-fecha">Vigente</div>
+              <h3 class="card-comunicado-titulo">Suspensión temporal de entrega de constancias de posesión</h3>
+              <p class="card-comunicado-texto">En común acuerdo con Bienes comunales y Procuraduría Agraria, no se entregarán constancias de posesión hasta nuevo aviso.</p>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <article class="card-comunicado">
+              <div class="card-comunicado-fecha">Vigente</div>
+              <h3 class="card-comunicado-titulo">Suspensión de aclareos y quema de basura</h3>
+              <p class="card-comunicado-texto">Se suspenden los aclareos y la quema de basura en los sitios y solares de la colonia.</p>
+            </article>
+          </div>
+          <div class="col-sm-6 col-lg-4">
+            <article class="card-comunicado">
+              <div class="card-comunicado-fecha">Vigente</div>
+              <h3 class="card-comunicado-titulo">Aviso para liquidar adeudos de cooperaciones</h3>
+              <p class="card-comunicado-texto">Liquidar adeudos de cooperaciones para obtener la Constancia de no adeudo.</p>
+            </article>
+          </div>
+        </div>
+        <div class="text-center mt-4">
+          <a href="noticias.html" class="link-ver-todos">Ver todas las noticias y comunicados →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= EVENTOS + AVANCE (two-up) ========= -->
+    <section class="py-5 bg-white">
+      <div class="container">
+        <div class="row g-5">
+
+          <!-- Eventos -->
+          <div class="col-lg-6">
+            <div class="section-title-wrap mb-4">
+              <div>
+                <p class="section-eyebrow">Calendario</p>
+                <h2 class="section-title">Próximos eventos</h2>
+              </div>
+              <a href="eventos.html" class="link-ver-todos d-none d-sm-inline">Ver todos →</a>
+            </div>
+            <div class="d-flex flex-column gap-3">
+              <div class="evento-card">
+                <div class="evento-fecha">
+                  <div class="dia">—</div>
+                  <div class="mes">—</div>
+                </div>
+                <div class="flex-grow-1">
+                  <div class="fw-semibold mb-1">Acuerdos sobre el costo de estudio de impacto ambiental</div>
+                  <div class="small text-secondary">Tema a tratar en asamblea.</div>
+                  <a href="eventos.html" class="link-mas small d-inline-block mt-2">Ver detalles →</a>
+                </div>
+              </div>
+              <div class="evento-card" style="border: 1px dashed var(--bs-secondary-border, #dee2e6);">
+                <div class="flex-grow-1 text-center py-2">
+                  <p class="text-secondary mb-0 fw-medium">En espera de próximos eventos</p>
+                  <p class="small text-secondary mb-0 mt-1">Las fechas se publicarán aquí y en Comunicados.</p>
+                  <a href="eventos.html" class="link-mas small d-inline-block mt-2">Ver eventos →</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Avance -->
+          <div class="col-lg-6">
+            <div class="section-title-wrap mb-4">
+              <div>
+                <p class="section-eyebrow">Progreso</p>
+                <h2 class="section-title">Avance del desarrollo</h2>
+              </div>
+              <a href="avance.html" class="link-ver-todos d-none d-sm-inline">Ver todo →</a>
+            </div>
+            <div class="d-flex flex-column gap-3">
+              <div class="avance-item">
+                <div class="avance-icono avance-icono--ok">✓</div>
+                <div class="flex-grow-1">
+                  <div class="fw-semibold">Entrada principal</div>
+                  <div class="small text-secondary">Obra terminada; en espera de losa del canal.</div>
+                </div>
+                <span class="avance-badge avance-badge--ok">Completado</span>
+              </div>
+              <div class="avance-item">
+                <div class="avance-icono avance-icono--ok">✓</div>
+                <div class="flex-grow-1">
+                  <div class="fw-semibold">Energía eléctrica</div>
+                  <div class="small text-secondary">Primera ampliación conectada (FSUE).</div>
+                </div>
+                <span class="avance-badge avance-badge--ok">Completado</span>
+              </div>
+              <div class="avance-item">
+                <div class="avance-icono avance-icono--progreso">⧖</div>
+                <div class="flex-grow-1">
+                  <div class="fw-semibold">Losa del canal</div>
+                  <div class="small text-secondary">Proyecto en gestión activa.</div>
+                </div>
+                <span class="avance-badge avance-badge--progreso">En curso</span>
+              </div>
+              <div class="avance-item">
+                <div class="avance-icono avance-icono--progreso">⧖</div>
+                <div class="flex-grow-1">
+                  <div class="fw-semibold">Estudio de impacto ambiental</div>
+                  <div class="small text-secondary">Acuerdo de costos en proceso.</div>
+                </div>
+                <span class="avance-badge avance-badge--progreso">En curso</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ========= PATROCINADORES ========= -->
+    <section id="patrocinadores" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10 col-lg-8">
+            <div class="section-title-wrap mb-4 text-center">
+              <div>
+                <p class="section-eyebrow">Reconocimiento</p>
+                <h2 class="section-title">Patrocinadores</h2>
+              </div>
+            </div>
+            <p class="text-secondary text-center mb-4">Aún no contamos con patrocinadores. Si deseas apoyar el desarrollo de la colonia con gestión, recursos o trabajo, puedes solicitar ser patrocinador.</p>
+            <div class="text-center">
+              <a href="patrocinadores.html" class="btn btn-outline-patrocinador me-2">Solicitar ser patrocinador</a>
+              <a href="https://wa.me/522211980049" class="btn btn-patrocinador-cta" target="_blank" rel="noopener noreferrer">Contactar por WhatsApp</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="reporta" class="cta-reporta">
-      <div class="container">
-        <div class="row align-items-center justify-content-between g-4">
-          <div class="col-lg-8">
-            <h3 class="h4 mb-1">¿Viste algo que debamos atender?</h3>
-            <p class="mb-0 opacity-90">Reporta baches, luminarias, residuos u otros incidentes.</p>
-          </div>
-          <div class="col-lg-4 text-lg-end">
-            <a href="https://wa.me/522211980049" class="btn btn-white" target="_blank" rel="noopener noreferrer">WhatsApp</a>
-          </div>
-        </div>
-      </div>
-    </section>
   </main>
 
-  <footer class="site-footer">
-    <div class="container">
-      <div class="row g-4 py-4">
-        <div class="col-md-6 col-lg-5">
-          <div class="footer-brand">Colonia El Mirador</div>
-          <p class="footer-text mt-2 mb-0">Transparencia, participación y desarrollo comunitario.</p>
+  <!-- Modales galería noticias -->
+  <div class="modal fade" id="modalEntradaPrincipal" tabindex="-1" aria-labelledby="modalEntradaPrincipalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="modalEntradaPrincipalLabel">Terminación de la Entrada Principal (FEDEMO)</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
         </div>
-        <div class="col-6 col-md-3 col-lg-2">
-          <div class="footer-title">Enlaces</div>
-          <ul class="list-unstyled mb-0">
-            <li><a href="transparencia.html">Transparencia</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="contacto.html">Directorio</a></li>
-          </ul>
-        </div>
-        <div class="col-6 col-md-3 col-lg-4">
-          <div class="footer-title">Información de contacto</div>
-          <p class="footer-text mb-0 small">
-            <strong>Comité de la Colonia El Mirador</strong><br>
-            Puedes pedir información en casa de la sra. Xochitl.<br>
-            De lunes a viernes de 6 a 8 pm.<br>
-            WhatsApp: <a href="https://wa.me/522211980049" class="text-decoration-none">22 11 98 00 49</a><br>
-            E-mail: <a href="mailto:contacto@elmiradortecomavaca.com" class="text-decoration-none">contacto@elmiradortecomavaca.com</a>
-          </p>
+        <div class="modal-body p-0">
+          <div id="carouselEntradaPrincipal" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Noticias/Entrada_Principal.jpeg" class="d-block w-100" alt="Entrada principal de la colonia">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Noticias/EntradaPrincipalApertura.jpeg" class="d-block w-100" alt="Apertura de la entrada principal">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEntradaPrincipal" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEntradaPrincipal" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselEntradaPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+              <button type="button" data-bs-target="#carouselEntradaPrincipal" data-bs-slide-to="1" aria-label="Foto 2"></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">© 2025 Colonia El Mirador.</div>
+  </div>
+  <div class="modal fade" id="modalConexionElectrica" tabindex="-1" aria-labelledby="modalConexionElectricaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="modalConexionElectricaLabel">Conexión de Energía Eléctrica (programa FSUE)</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div id="carouselConexionElectrica" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Noticias/ConexionElectrica.jpeg" class="d-block w-100" alt="Conexión de energía eléctrica">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Noticias/InstalacionElectrica.jpeg" class="d-block w-100" alt="Instalación eléctrica">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselConexionElectrica" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselConexionElectrica" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselConexionElectrica" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+              <button type="button" data-bs-target="#carouselConexionElectrica" data-bs-slide-to="1" aria-label="Foto 2"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========= FOOTER ========= -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4 py-5 align-items-start">
+
+        <!-- Marca -->
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="footer-brand mb-2">Colonia El Mirador</div>
+          <p class="footer-text mb-3">Colonia en desarrollo. Transparencia, participación y trabajo comunitario.</p>
+          <a href="https://wa.me/522211980049" class="btn btn-footer-wa" target="_blank" rel="noopener noreferrer">
+            WhatsApp
+          </a>
+        </div>
+
+        <!-- Separador vertical solo en md+ -->
+        <div class="col-md-1 d-none d-md-flex justify-content-center">
+          <div class="footer-divider"></div>
+        </div>
+
+        <!-- Contacto -->
+        <div class="col-12 col-md-6 col-lg-7">
+          <div class="footer-title mb-3">Información de contacto</div>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <p class="footer-text small mb-1"><strong>Comité de la Colonia El Mirador</strong></p>
+              <p class="footer-text small mb-0">
+                Atención: Lun–vie, 6–8 pm
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <p class="footer-text small mb-1">
+                <a href="https://wa.me/522211980049" class="text-decoration-none">22 11 98 00 49</a>
+              </p>
+              <p class="footer-text small mb-1">
+                <a href="mailto:contacto@elmiradortecomavaca.com"
+                  class="text-decoration-none">contacto@elmiradortecomavaca.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <span>© 2025 Colonia El Mirador. Todos los derechos reservados.</span>
+        <nav aria-label="Enlaces del pie de página">
+          <a href="noticias.html">Comunicados</a> ·
+          <a href="eventos.html">Eventos</a> ·
+          <a href="avance.html">Avance</a> ·
+          <a href="patrocinadores.html">Patrocinadores</a> ·
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    (function() {
-      var pantalla = document.getElementById('pantallaCarga');
-      if (pantalla) {
-        setTimeout(function() {
-          pantalla.classList.add('oculta');
-        }, 2500);
+    (function () {
+      var heroCarousel = document.getElementById('heroCarousel');
+      if (heroCarousel && typeof bootstrap !== 'undefined') {
+        var carousel = new bootstrap.Carousel(heroCarousel, {
+          interval: 5000,
+          ride: 'carousel',
+          wrap: true,
+          pause: 'hover'
+        });
+      }
+    })();
+  </script>
+  <script>
+    (function () {
+      var API_BASE = 'https://abacus.jasoncameron.dev';
+      var NAMESPACE = 'elmiradortecomavaca';
+      var KEY = 'visits';
+      var STORAGE_KEY = 'elmirador_visit_counted';
+      var el = document.getElementById('visitas-num');
+      if (!el) return;
+
+      function showCount(value) {
+        if (typeof value === 'number' && !isNaN(value)) {
+          el.textContent = value.toLocaleString('es-MX');
+        } else {
+          el.textContent = '0';
+        }
+      }
+
+      function getCount() {
+        fetch(API_BASE + '/get/' + NAMESPACE + '/' + KEY)
+          .then(function (r) { return r.json(); })
+          .then(function (data) { showCount(data.value); })
+          .catch(function () { showCount(0); });
+      }
+
+      function hitThenShow() {
+        fetch(API_BASE + '/hit/' + NAMESPACE + '/' + KEY)
+          .then(function (r) { return r.json(); })
+          .then(function (data) { showCount(data.value); })
+          .catch(getCount);
+      }
+
+      if (!sessionStorage.getItem(STORAGE_KEY)) {
+        sessionStorage.setItem(STORAGE_KEY, '1');
+        hitThenShow();
+      } else {
+        getCount();
       }
     })();
   </script>
 </body>
+
 </html>
