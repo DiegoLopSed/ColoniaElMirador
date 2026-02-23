@@ -1,37 +1,45 @@
 <!doctype html>
 <html lang="es">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Noticias – Colonia El Mirador</title>
-  <meta name="description" content="Noticias, comunicados y actualizaciones de la Colonia El Mirador.">
+  <title>Noticias y Comunicados – Colonia El Mirador</title>
+  <meta name="description" content="Noticias, comunicados y avisos oficiales de la Colonia El Mirador en desarrollo.">
   <link rel="icon" type="image/jpeg" href="Images/common/Logo_Oficial.jpeg" />
   <link rel="apple-touch-icon" href="Images/common/Logo_Oficial.jpeg" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="css/estilos.css" rel="stylesheet" />
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="navbar navbar-expand-md navbar-light">
+
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
-          <img src="Images/common/Logo_Oficial.jpeg" alt="Colonia El Mirador" class="logo-escudo">
-          <div>
-            <span class="d-block">Colonia El Mirador</span>
-            <span class="subtitle d-block">Sitio oficial de la comunidad</span>
-          </div>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal" aria-controls="navPrincipal" aria-expanded="false" aria-label="Abrir menú">
+        <a class="navbar-brand navbar-brand-compact d-lg-none" href="index.html">Colonia El Mirador</a>
+        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navPrincipal"
+          aria-controls="navPrincipal" aria-expanded="false" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navPrincipal">
-          <ul class="navbar-nav ms-auto gap-1 gap-md-3">
+          <a class="navbar-brand d-flex align-items-center gap-3" href="index.html">
+            <img src="Images/common/Logo_Oficial.jpeg" alt="Colonia El Mirador" class="logo-escudo">
+            <div>
+              <span class="d-block">Colonia El Mirador</span>
+              <span class="subtitle d-block">Construyendo el futuro</span>
+            </div>
+          </a>
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-1 gap-lg-2">
             <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link active" href="noticias.html">Noticias</a></li>
+            <li class="nav-item"><a class="nav-link active" href="noticias.html">Comunicados</a></li>
+            <li class="nav-item"><a class="nav-link" href="eventos.html">Eventos</a></li>
+            <li class="nav-item"><a class="nav-link" href="avance.html">Avance</a></li>
             <li class="nav-item"><a class="nav-link" href="servicios.html">Servicios</a></li>
+            <li class="nav-item"><a class="nav-link" href="patrocinadores.html">Patrocinadores</a></li>
             <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
           </ul>
-          <a href="index.html#reporta" class="btn btn-reporta ms-2 mt-2 mt-md-0">Reporta un problema</a>
+          <a href="index.html#reporta" class="btn btn-reporta ms-lg-3 mt-3 mt-lg-0">Reporta un problema</a>
         </div>
       </div>
     </nav>
@@ -39,94 +47,220 @@
 
   <main>
     <section class="hero">
-      <div class="container py-4">
-        <h2 class="display-6">Noticias y Comunicados</h2>
-        <p class="lead mb-0">Mantente informado sobre las últimas novedades de tu colonia.</p>
+      <div class="container py-2">
+        <div class="row justify-content-center text-center">
+          <div class="col-12 col-md-9 col-lg-7">
+            <p class="section-eyebrow mb-2" style="color:rgba(255,255,255,.7)">Sitio oficial</p>
+            <h1 class="hero-titulo mb-3">Noticias y comunicados</h1>
+            <p class="hero-subtitulo">Noticias del desarrollo, comunicados y avisos oficiales de la Colonia El Mirador.</p>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="py-5">
       <div class="container">
-        <div class="row g-4">
-          <div class="col-lg-4 col-md-6">
-            <article class="card card-elmirador h-100">
-              <img src="Images/Noticias/Entrada_Principal.jpeg" class="card-img-top" alt="Terminación de la entrada principal">
-              <div class="card-body">
-                <h4 class="card-title h5">Terminación de la entrada principal</h4>
-                <p class="card-text">Con el apoyo del Lic. Mario Méndez (presidente del FEDEMO), que proporcionó la maquinaria para realizar este trabajo, y apoyo de faenas y cooperaciones de los colonos.</p>
-              </div>
-            </article>
+
+        <!-- NOTICIAS -->
+        <div class="mb-5">
+          <div class="section-title-wrap mb-4">
+            <div>
+              <p class="section-eyebrow">Desarrollo</p>
+              <h2 class="section-title">Noticias</h2>
+            </div>
           </div>
-          <div class="col-lg-4 col-md-6">
-            <article class="card card-elmirador h-100">
-              <img src="Images/Electrica/Instalacion_electrica.jpg" class="card-img-top" alt="Conexión de la energía eléctrica">
-              <div class="card-body">
-                <h4 class="card-title h5">Conexión de la energía eléctrica</h4>
-                <p class="card-text">Gestión realizada por el Ing. Josué Jesús Escobar Aguilar, que tramitó por medio del programa federal FSUE. 2 años de espera, pero se logró la 1ra ampliación.</p>
-              </div>
-            </article>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <article class="card card-elmirador h-100">
-              <img src="Images/Electrica/Instalacion_electrica.jpg" class="card-img-top" alt="Conexión de la energía eléctrica">
-              <div class="card-body">
-                <h4 class="card-title h5">Inauguración de la calle y conexión de energía eléctrica</h4>
-                <p class="card-text mb-3">El día 27 de enero de 2026 se inauguró la Entrada Principal y la conexión de la energía eléctrica, motivo para celebrar con los vecinos, colonos, comité de la colonia y comité de Bienes comunales.</p>
-                <p class="card-text small mb-0"><strong>Invitados principales:</strong></p>
-                <ul class="small text-secondary mb-0 ps-3">
-                  <li>Ing. Víctor Manuel Salguero Alvarado – Jefe de Residencia de la Procuraduría Agraria</li>
-                  <li>Lic. Luz María Ortiz Franco – Visitador agrario de la Procuraduría Agraria</li>
-                  <li>Lic. Mario Méndez – Presidente del FEDEMO en Oaxaca</li>
-                  <li>C. Abdiel M. García Ortiz</li>
-                </ul>
-              </div>
-            </article>
-          </div>
-          <div class="col-lg-4 col-md-6">
-            <article class="card card-elmirador h-100">
-              <img src="Images/Noticias/Entrada_Principal.jpeg" class="card-img-top" alt="Uso de la entrada principal">
-              <div class="card-body">
-                <h4 class="card-title h5">Acuerdo sobre uso de la entrada principal</h4>
-                <p class="card-text mb-2">Por acuerdo de asamblea de colonos, la persona que no haya cubierto sus adeudos de cooperaciones no podrá hacer uso de la entrada principal.</p>
-                <p class="card-text mb-0">Por el momento no está en uso, hasta que se realice la losa reforzada del canal.</p>
-              </div>
-            </article>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4">
+              <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalEntradaPrincipal" aria-label="Ver galería: Terminación de la Entrada Principal">
+                <div class="card-comunicado-fecha">Obras</div>
+                <h2 class="card-comunicado-titulo">Terminación de la Entrada Principal con apoyo del Lic. Mario Méndez (FEDEMO)</h2>
+                <p class="card-comunicado-texto">Con el apoyo del Lic. Mario Méndez (FEDEMO), que proporcionó la maquinaria, más faenas y cooperaciones de los colonos.</p>
+                <span class="card-comunicado-galeria-label">Ver fotos →</span>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalConexionElectrica" aria-label="Ver galería: Conexión de Energía Eléctrica">
+                <div class="card-comunicado-fecha">Infraestructura</div>
+                <h2 class="card-comunicado-titulo">Conexión de Energía Eléctrica gestionada por Ing. Josué Jesús Escobar Aguilar (programa FSUE)</h2>
+                <p class="card-comunicado-texto">Gestión realizada por el Ing. Josué Jesús Escobar Aguilar mediante el programa federal FSUE. Tras dos años de gestión se logró la primera ampliación.</p>
+                <span class="card-comunicado-galeria-label">Ver fotos →</span>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="card-comunicado">
+                <div class="card-comunicado-fecha">27 de enero de 2026</div>
+                <h2 class="card-comunicado-titulo">Detalles de inauguración del 27 de enero con invitados especiales</h2>
+                <p class="card-comunicado-texto">Inauguración de la Entrada Principal y la conexión de energía eléctrica, con vecinos, colonos, comité de la colonia y comité de Bienes comunales. Invitados principales: Ing. Víctor Manuel Salguero Alvarado (Procuraduría Agraria), Lic. Luz María Ortiz Franco (Procuraduría Agraria), Lic. Mario Méndez (FEDEMO Oaxaca), C. Abdiel M. García Ortiz.</p>
+              </article>
+            </div>
           </div>
         </div>
+
+        <!-- COMUNICADOS Y AVISOS -->
+        <div>
+          <div class="section-title-wrap mb-4">
+            <div>
+              <p class="section-eyebrow">Avisos oficiales</p>
+              <h2 class="section-title">Comunicados y avisos</h2>
+            </div>
+          </div>
+          <div class="row g-4">
+            <div class="col-sm-6 col-lg-4">
+              <article class="card-comunicado">
+                <div class="card-comunicado-fecha">Vigente</div>
+                <h2 class="card-comunicado-titulo">Suspensión temporal de entrega de constancias de posesión</h2>
+                <p class="card-comunicado-texto">En común acuerdo con el Comisariado de bienes comunales, el Consejo de vigilancia y la Procuraduría Agraria, se informa que por el momento no se entregarán constancias de posesión. Hasta nuevo aviso.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="card-comunicado">
+                <div class="card-comunicado-fecha">Vigente</div>
+                <h2 class="card-comunicado-titulo">Suspensión de aclareos y quema de basura</h2>
+                <p class="card-comunicado-texto">Se suspenden los aclareos y la quema de basura en los sitios y solares de la colonia.</p>
+              </article>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <article class="card-comunicado">
+                <div class="card-comunicado-fecha">Vigente</div>
+                <h2 class="card-comunicado-titulo">Aviso para liquidar adeudos de cooperaciones</h2>
+                <p class="card-comunicado-texto">Pasar a liquidar sus adeudos de cooperaciones para obtener la Constancia de no adeudo. Cubierto el total de adeudos (faenas, reuniones y cooperaciones), puede solicitar su constancia.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
   </main>
 
+  <!-- ========= FOOTER ========= -->
   <footer class="site-footer">
     <div class="container">
-      <div class="row g-4 py-4">
-        <div class="col-md-6 col-lg-5">
-          <div class="footer-brand">Colonia El Mirador</div>
-          <p class="footer-text mt-2 mb-0">Transparencia, participación y desarrollo comunitario.</p>
+      <div class="row g-4 py-5 align-items-start">
+
+        <!-- Marca -->
+        <div class="col-12 col-md-5 col-lg-4">
+          <div class="footer-brand mb-2">Colonia El Mirador</div>
+          <p class="footer-text mb-3">Colonia en desarrollo. Transparencia, participación y trabajo comunitario.</p>
+          <a href="https://wa.me/522211980049" class="btn btn-footer-wa" target="_blank" rel="noopener noreferrer">
+            WhatsApp
+          </a>
         </div>
-        <div class="col-6 col-md-3 col-lg-2">
-          <div class="footer-title">Enlaces</div>
-          <ul class="list-unstyled mb-0">
-            <li><a href="transparencia.html">Transparencia</a></li>
-            <li><a href="#">Proyectos</a></li>
-            <li><a href="contacto.html">Directorio</a></li>
-          </ul>
+
+        <!-- Separador vertical solo en md+ -->
+        <div class="col-md-1 d-none d-md-flex justify-content-center">
+          <div class="footer-divider"></div>
         </div>
-        <div class="col-6 col-md-3 col-lg-4">
-          <div class="footer-title">Información de contacto</div>
-          <p class="footer-text mb-0 small">
-            <strong>Comité de la Colonia El Mirador</strong><br>
-            Puedes pedir información en casa de la sra. Xochitl.<br>
-            De lunes a viernes de 6 a 8 pm.<br>
-            WhatsApp: <a href="https://wa.me/522211980049" class="text-decoration-none">22 11 98 00 49</a><br>
-            E-mail: <a href="mailto:contacto@elmiradortecomavaca.com" class="text-decoration-none">contacto@elmiradortecomavaca.com</a>
-          </p>
+
+        <!-- Contacto -->
+        <div class="col-12 col-md-6 col-lg-7">
+          <div class="footer-title mb-3">Información de contacto</div>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <p class="footer-text small mb-1"><strong>Comité de la Colonia El Mirador</strong></p>
+              <p class="footer-text small mb-0">
+                Atención: Lun–vie, 6–8 pm
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <p class="footer-text small mb-1">
+                <a href="https://wa.me/522211980049" class="text-decoration-none">22 11 98 00 49</a>
+              </p>
+              <p class="footer-text small mb-1">
+                <a href="mailto:contacto@elmiradortecomavaca.com"
+                  class="text-decoration-none">contacto@elmiradortecomavaca.com</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+        <span>© 2025 Colonia El Mirador. Todos los derechos reservados.</span>
+        <nav aria-label="Enlaces del pie de página">
+          <a href="noticias.html">Comunicados</a> ·
+          <a href="eventos.html">Eventos</a> ·
+          <a href="avance.html">Avance</a> ·
+          <a href="patrocinadores.html">Patrocinadores</a> ·
+          <a href="contacto.html">Contacto</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modales galería noticias -->
+  <div class="modal fade" id="modalEntradaPrincipal" tabindex="-1" aria-labelledby="modalEntradaPrincipalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="modalEntradaPrincipalLabel">Terminación de la Entrada Principal (FEDEMO)</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div id="carouselEntradaPrincipal" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Noticias/Entrada_Principal.jpeg" class="d-block w-100" alt="Entrada principal de la colonia">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Noticias/EntradaPrincipalApertura.jpeg" class="d-block w-100" alt="Apertura de la entrada principal">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselEntradaPrincipal" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselEntradaPrincipal" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselEntradaPrincipal" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+              <button type="button" data-bs-target="#carouselEntradaPrincipal" data-bs-slide-to="1" aria-label="Foto 2"></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <div class="footer-bottom">© 2025 Colonia El Mirador.</div>
-  </footer>
+  </div>
+  <div class="modal fade" id="modalConexionElectrica" tabindex="-1" aria-labelledby="modalConexionElectricaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="modalConexionElectricaLabel">Conexión de Energía Eléctrica (programa FSUE)</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
+          <div id="carouselConexionElectrica" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/Noticias/ConexionElectrica.jpeg" class="d-block w-100" alt="Conexión de energía eléctrica">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/Noticias/InstalacionElectrica.jpeg" class="d-block w-100" alt="Instalación eléctrica">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselConexionElectrica" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselConexionElectrica" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Siguiente</span>
+            </button>
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselConexionElectrica" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+              <button type="button" data-bs-target="#carouselConexionElectrica" data-bs-slide-to="1" aria-label="Foto 2"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
