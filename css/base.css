@@ -1,0 +1,16 @@
+/**
+ * Base – Colonia El Mirador
+ * body, main
+ */
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
