@@ -22,6 +22,12 @@
   font-weight: 400;
 }
 
+/* Lema "Construyendo el futuro" en tono dorado para contraste en el nav */
+.site-header .navbar-brand .navbar-lema {
+  color: #b8860b;
+  font-weight: 500;
+}
+
 .site-header .nav-link {
   color: var(--color-texto);
   font-weight: 500;
