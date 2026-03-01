@@ -121,8 +121,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
       (function () {
-        // Días de patrocinio: desde enero hasta hoy = 57 días (ajustar fecha real si cambia)
-        var DIAS_PATROCINIO = 57;
+        // Fecha de inicio: 1 de enero. Cambiar anioInicio si el patrocinio empezó en otro año (ej. 2025).
+        var anioInicio = new Date().getFullYear();
+        var hoy = new Date();
+        var inicioPatrocinio = new Date(anioInicio, 0, 1); // 1 de enero, 00:00
+        inicioPatrocinio.setHours(0, 0, 0, 0);
+        hoy.setHours(0, 0, 0, 0);
+        var DIAS_PATROCINIO = Math.max(0, Math.floor((hoy - inicioPatrocinio) / (1000 * 60 * 60 * 24)));
+
         var el = document.getElementById('dias-patrocinio');
         if (el) el.textContent = DIAS_PATROCINIO;
 
