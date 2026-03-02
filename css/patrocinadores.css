@@ -889,6 +889,58 @@
   line-height: 1.5;
 }
 
+/* Frase destacada al inicio de la card de contribución con imágenes */
+.patrocinador-contribucion__leyenda {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #b8860b; /* dorado, en sintonía con el lema del sitio */
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+/* Contribución con imágenes en card detallada */
+.patrocinador-contribucion--imagenes {
+  flex-direction: column;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.patrocinador-contribucion--imagenes .patrocinador-contribucion__galeria {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.patrocinador-contribucion__imagen-wrap {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  border-radius: var(--radio);
+}
+
+.patrocinador-contribucion__imagen {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Mensaje principal de la contribución con imágenes mucho más grande */
+.patrocinador-contribucion--imagenes .patrocinador-contribucion__texto {
+  font-size: 1.12rem;
+  line-height: 1.75;
+  text-align: justify;
+}
+
+@media (max-width: 767.98px) {
+  .patrocinador-contribucion--imagenes .patrocinador-contribucion__galeria {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media (max-width: 767.98px) {
   .hero-patrocador {
     padding: 3rem 0;

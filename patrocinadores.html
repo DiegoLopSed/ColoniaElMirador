@@ -183,7 +183,7 @@
                 </div>
                 <div class="row justify-content-center mb-4">
                     <div class="col-12 col-lg-10 col-xl-8">
-                        <a href="patrocinador-josue-escobar-aguilar.html" class="patrocinador-destacado text-decoration-none">
+                        <a href="patrocinadores/patrocinador-josue-escobar-aguilar.html" class="patrocinador-destacado text-decoration-none">
                             <div class="patrocinador-destacado__inner">
                                 <div class="patrocinador-destacado__glow" aria-hidden="true"></div>
                                 <div class="patrocinador-destacado__avatar-wrap">
@@ -278,36 +278,7 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      (function () {
-        var banner = document.querySelector('.niveles-banner__track');
-        var wrapper = document.querySelector('.niveles-banner');
-        if (banner && wrapper) {
-          function updateScrollHint() {
-            var x = banner.scrollLeft;
-            var max = banner.scrollWidth - banner.clientWidth;
-            if (max <= 0) wrapper.removeAttribute('data-scroll');
-            else if (x <= 4) wrapper.setAttribute('data-scroll', 'start');
-            else if (x >= max - 4) wrapper.setAttribute('data-scroll', 'end');
-            else wrapper.setAttribute('data-scroll', 'middle');
-          }
-          banner.addEventListener('scroll', updateScrollHint);
-          updateScrollHint();
-        }
-        document.querySelectorAll('.nivel-carta').forEach(function (card) {
-          card.addEventListener('click', function (e) {
-            if (e.target.closest('.nivel-carta__dorso') && e.target.closest('.nivel-carta__lista')) return;
-            this.classList.toggle('is-flipped');
-          });
-          card.addEventListener('keydown', function (e) {
-            if (e.key === 'Enter' || e.key === ' ') {
-              e.preventDefault();
-              this.classList.toggle('is-flipped');
-            }
-          });
-        });
-      })();
-    </script>
+    <script src="js/patrocinadores.js"></script>
 </body>
 
 </html>
