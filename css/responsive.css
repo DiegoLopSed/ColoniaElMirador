@@ -3,6 +3,21 @@
  */
 
 @media (max-width: 767.98px) {
+  .carousel-noticias {
+    padding: 0 2.25rem;
+  }
+
+  .carousel-noticias-control {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .carousel-noticias-control .carousel-control-prev-icon,
+  .carousel-noticias-control .carousel-control-next-icon {
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
   .hero {
     padding: 3rem 0;
   }

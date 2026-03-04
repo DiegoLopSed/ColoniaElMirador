@@ -97,15 +97,104 @@
   flex-grow: 1;
 }
 
-/* Card comunicado con galería (clic para abrir modal) */
+/* Card comunicado con galería (clic para abrir modal) – fondo verde muy tenue para resaltar */
 .card-comunicado.card-comunicado-galeria {
   cursor: pointer;
+  background: rgba(121, 201, 158, 0.08);
+  border-color: rgba(15, 107, 58, 0.12);
+}
+.card-comunicado.card-comunicado-galeria:hover {
+  background: rgba(121, 201, 158, 0.12);
+  border-color: rgba(15, 107, 58, 0.2);
 }
 .card-comunicado-galeria .card-comunicado-galeria-label {
   font-size: 0.8rem;
   color: var(--color-primario);
   font-weight: 500;
   margin-top: 0.5rem;
+}
+
+/* Carrusel de noticias en index */
+.carousel-noticias {
+  position: relative;
+  padding: 0 3rem;
+}
+.carousel-noticias .carousel-item {
+  min-height: 1px;
+}
+
+/* Cards del carrusel: más grandes y tipografía mayor */
+.carousel-noticias .card-comunicado {
+  padding: 1.75rem 2rem;
+  min-height: 12rem;
+}
+.carousel-noticias .card-comunicado .card-comunicado-fecha {
+  font-size: 0.85rem;
+  margin-bottom: 0.6rem;
+}
+.carousel-noticias .card-comunicado .card-comunicado-titulo {
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  line-height: 1.35;
+}
+.carousel-noticias .card-comunicado .card-comunicado-texto {
+  font-size: 1rem;
+  line-height: 1.55;
+}
+.carousel-noticias .card-comunicado-galeria .card-comunicado-galeria-label {
+  font-size: 0.95rem;
+  margin-top: 0.6rem;
+}
+.carousel-noticias-control {
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: auto;
+  border-radius: 50%;
+  background-color: var(--color-primario);
+  opacity: 0.9;
+  border: none;
+}
+.carousel-noticias-control:hover {
+  opacity: 1;
+  background-color: var(--color-primario-oscuro);
+}
+.carousel-noticias-control .carousel-control-prev-icon,
+.carousel-noticias-control .carousel-control-next-icon {
+  width: 1rem;
+  height: 1rem;
+}
+.carousel-noticias-indicators {
+  position: static;
+  margin-top: 1.25rem;
+  margin-bottom: 0;
+}
+.carousel-noticias-indicators button {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--color-borde);
+  border: none;
+  opacity: 1;
+}
+.carousel-noticias-indicators button.active {
+  background-color: var(--color-primario);
+  transform: scale(1.2);
+}
+
+/* Indicadores móvil: 10 puntos, más pequeños y permitir wrap si hace falta */
+.carousel-noticias-indicators-mobile {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+}
+.carousel-noticias-mobile .carousel-noticias-indicators-mobile button {
+  width: 6px;
+  height: 6px;
+}
+.carousel-noticias-mobile .carousel-noticias-indicators-mobile button.active {
+  transform: scale(1.15);
 }
 
 /* Carrusel dentro del modal de galería */
