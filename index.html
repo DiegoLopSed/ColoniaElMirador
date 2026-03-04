@@ -136,50 +136,253 @@
           </div>
           <a href="noticias.html" class="link-ver-todos d-none d-sm-inline">Ver todos →</a>
         </div>
-        <div class="row g-4">
-          <div class="col-sm-6 col-lg-4">
-            <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalEntradaPrincipal" aria-label="Ver galería: Terminación de la Entrada Principal">
-              <div class="card-comunicado-fecha">Obras</div>
-              <h3 class="card-comunicado-titulo">Terminación de la Entrada Principal con apoyo del Lic. Mario Méndez (FEDEMO)</h3>
-              <p class="card-comunicado-texto">Con el apoyo del Lic. Mario Méndez (FEDEMO), maquinaria, faenas y cooperaciones de los colonos.</p>
-              <span class="card-comunicado-galeria-label">Ver fotos →</span>
-            </article>
+        <!-- Carrusel desktop/tablet: 3 noticias por slide -->
+        <div id="carouselNoticias" class="carousel slide carousel-noticias d-none d-md-block" data-bs-ride="carousel" data-bs-interval="6000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-4">
+                <div class="col-lg-4">
+                  <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalEntradaPrincipal" aria-label="Ver galería: Terminación de la Entrada Principal">
+                    <div class="card-comunicado-fecha">Obras</div>
+                    <h3 class="card-comunicado-titulo">Terminación de la Entrada Principal con apoyo del Lic. Mario Méndez (FEDEMO)</h3>
+                    <p class="card-comunicado-texto">Con el apoyo del Lic. Mario Méndez (FEDEMO), maquinaria, faenas y cooperaciones de los colonos.</p>
+                    <span class="card-comunicado-galeria-label">Ver fotos →</span>
+                  </article>
+                </div>
+                <div class="col-lg-4">
+                  <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalConexionElectrica" aria-label="Ver galería: Conexión de Energía Eléctrica">
+                    <div class="card-comunicado-fecha">Infraestructura</div>
+                    <h3 class="card-comunicado-titulo">Conexión de Energía Eléctrica gestionada por Ing. Josué Jesús Escobar Aguilar (programa FSUE)</h3>
+                    <p class="card-comunicado-texto">Gestión mediante el programa federal FSUE. Tras dos años se logró la primera ampliación.</p>
+                    <span class="card-comunicado-galeria-label">Ver fotos →</span>
+                  </article>
+                </div>
+                <div class="col-lg-4">
+                  <article class="card-comunicado">
+                    <div class="card-comunicado-fecha">27 de enero de 2026</div>
+                    <h3 class="card-comunicado-titulo">Detalles de inauguración del 27 de enero con invitados especiales</h3>
+                    <p class="card-comunicado-texto">Inauguración Entrada Principal y conexión de energía eléctrica, con comité y Bienes comunales e invitados especiales.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-lg-4">
+                  <article class="card-comunicado">
+                    <div class="card-comunicado-fecha">Vigente</div>
+                    <h3 class="card-comunicado-titulo">Suspensión temporal de entrega de constancias de posesión</h3>
+                    <p class="card-comunicado-texto">En común acuerdo con Bienes comunales y Procuraduría Agraria, no se entregarán constancias de posesión hasta nuevo aviso.</p>
+                  </article>
+                </div>
+                <div class="col-lg-4">
+                  <article class="card-comunicado">
+                    <div class="card-comunicado-fecha">Vigente</div>
+                    <h3 class="card-comunicado-titulo">Suspensión de aclareos y quema de basura</h3>
+                    <p class="card-comunicado-texto">Se suspenden los aclareos y la quema de basura en los sitios y solares de la colonia.</p>
+                  </article>
+                </div>
+                <div class="col-lg-4">
+                  <article class="card-comunicado">
+                    <div class="card-comunicado-fecha">Vigente</div>
+                    <h3 class="card-comunicado-titulo">Aviso para liquidar adeudos de cooperaciones</h3>
+                    <p class="card-comunicado-texto">Liquidar adeudos de cooperaciones para obtener la Constancia de no adeudo.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-lg-4">
+                  <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalGobernadorJara" aria-label="Ver galería: Entrega de solicitud con el Gobernador Salomón Jara Cruz">
+                    <div class="card-comunicado-fecha">Gestión</div>
+                    <h3 class="card-comunicado-titulo">Entrega de solicitud con el Gobernador de Oaxaca Ing. Salomón Jara Cruz</h3>
+                    <p class="card-comunicado-texto">Gestión ante el gobierno estatal de Oaxaca para el desarrollo de la colonia.</p>
+                    <span class="card-comunicado-galeria-label">Ver fotos →</span>
+                  </article>
+                </div>
+                <div class="col-lg-4">
+                  <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalSenadorMoralesEntrega" aria-label="Ver galería: Entrega de solicitud con el Senador Antonino Morales">
+                    <div class="card-comunicado-fecha">Gestión</div>
+                    <h3 class="card-comunicado-titulo">Entrega de solicitud con el Senador de la República por Oaxaca - Antonino Morales</h3>
+                    <p class="card-comunicado-texto">Gestión ante el Senado de la República para apoyos y proyectos de la colonia.</p>
+                    <span class="card-comunicado-galeria-label">Ver fotos →</span>
+                  </article>
+                </div>
+                <div class="col-lg-4">
+                  <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalSenadorMorales" aria-label="Ver galería: Con el Senador Antonino Morales">
+                    <div class="card-comunicado-fecha">Gestión</div>
+                    <h3 class="card-comunicado-titulo">Con el Senador de la República Mexicana por Oaxaca - Antonino Morales</h3>
+                    <p class="card-comunicado-texto">Reunión y seguimiento con el Senador por Oaxaca en favor de la comunidad.</p>
+                    <span class="card-comunicado-galeria-label">Ver fotos →</span>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4">
+                <div class="col-lg-4">
+                  <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalIntegrantesComite" aria-label="Ver galería: Integrantes del Comité">
+                    <div class="card-comunicado-fecha">Comité</div>
+                    <h3 class="card-comunicado-titulo">Integrantes del Comité de la Colonia El Mirador Tecómavaca</h3>
+                    <p class="card-comunicado-texto">Conoce a los integrantes del comité que representan a la colonia.</p>
+                    <span class="card-comunicado-galeria-label">Ver fotos →</span>
+                  </article>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-6 col-lg-4">
-            <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalConexionElectrica" aria-label="Ver galería: Conexión de Energía Eléctrica">
-              <div class="card-comunicado-fecha">Infraestructura</div>
-              <h3 class="card-comunicado-titulo">Conexión de Energía Eléctrica gestionada por Ing. Josué Jesús Escobar Aguilar (programa FSUE)</h3>
-              <p class="card-comunicado-texto">Gestión mediante el programa federal FSUE. Tras dos años se logró la primera ampliación.</p>
-              <span class="card-comunicado-galeria-label">Ver fotos →</span>
-            </article>
+          <button class="carousel-control-prev carousel-noticias-control" type="button" data-bs-target="#carouselNoticias" data-bs-slide="prev" aria-label="Noticias anteriores">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next carousel-noticias-control" type="button" data-bs-target="#carouselNoticias" data-bs-slide="next" aria-label="Siguientes noticias">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+          <div class="carousel-indicators carousel-noticias-indicators">
+            <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselNoticias" data-bs-slide-to="3" aria-label="Slide 4"></button>
           </div>
-          <div class="col-sm-6 col-lg-4">
-            <article class="card-comunicado">
-              <div class="card-comunicado-fecha">27 de enero de 2026</div>
-              <h3 class="card-comunicado-titulo">Detalles de inauguración del 27 de enero con invitados especiales</h3>
-              <p class="card-comunicado-texto">Inauguración Entrada Principal y conexión de energía eléctrica, con comité y Bienes comunales e invitados especiales.</p>
-            </article>
+        </div>
+
+        <!-- Carrusel móvil: 1 noticia por slide -->
+        <div id="carouselNoticiasMobile" class="carousel slide carousel-noticias carousel-noticias-mobile d-md-none" data-bs-ride="carousel" data-bs-interval="6000">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row g-4 justify-content-center">
+                <div class="col-12">
+                  <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalEntradaPrincipal" aria-label="Ver galería: Terminación de la Entrada Principal">
+                    <div class="card-comunicado-fecha">Obras</div>
+                    <h3 class="card-comunicado-titulo">Terminación de la Entrada Principal con apoyo del Lic. Mario Méndez (FEDEMO)</h3>
+                    <p class="card-comunicado-texto">Con el apoyo del Lic. Mario Méndez (FEDEMO), maquinaria, faenas y cooperaciones de los colonos.</p>
+                    <span class="card-comunicado-galeria-label">Ver fotos →</span>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <div class="col-12">
+                  <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalConexionElectrica" aria-label="Ver galería: Conexión de Energía Eléctrica">
+                    <div class="card-comunicado-fecha">Infraestructura</div>
+                    <h3 class="card-comunicado-titulo">Conexión de Energía Eléctrica gestionada por Ing. Josué Jesús Escobar Aguilar (programa FSUE)</h3>
+                    <p class="card-comunicado-texto">Gestión mediante el programa federal FSUE. Tras dos años se logró la primera ampliación.</p>
+                    <span class="card-comunicado-galeria-label">Ver fotos →</span>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <div class="col-12">
+                  <article class="card-comunicado">
+                    <div class="card-comunicado-fecha">27 de enero de 2026</div>
+                    <h3 class="card-comunicado-titulo">Detalles de inauguración del 27 de enero con invitados especiales</h3>
+                    <p class="card-comunicado-texto">Inauguración Entrada Principal y conexión de energía eléctrica, con comité y Bienes comunales e invitados especiales.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <div class="col-12">
+                  <article class="card-comunicado">
+                    <div class="card-comunicado-fecha">Vigente</div>
+                    <h3 class="card-comunicado-titulo">Suspensión temporal de entrega de constancias de posesión</h3>
+                    <p class="card-comunicado-texto">En común acuerdo con Bienes comunales y Procuraduría Agraria, no se entregarán constancias de posesión hasta nuevo aviso.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <div class="col-12">
+                  <article class="card-comunicado">
+                    <div class="card-comunicado-fecha">Vigente</div>
+                    <h3 class="card-comunicado-titulo">Suspensión de aclareos y quema de basura</h3>
+                    <p class="card-comunicado-texto">Se suspenden los aclareos y la quema de basura en los sitios y solares de la colonia.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <div class="col-12">
+                  <article class="card-comunicado">
+                    <div class="card-comunicado-fecha">Vigente</div>
+                    <h3 class="card-comunicado-titulo">Aviso para liquidar adeudos de cooperaciones</h3>
+                    <p class="card-comunicado-texto">Liquidar adeudos de cooperaciones para obtener la Constancia de no adeudo.</p>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <div class="col-12">
+                  <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalGobernadorJara" aria-label="Ver galería: Entrega de solicitud con el Gobernador Salomón Jara Cruz">
+                    <div class="card-comunicado-fecha">Gestión</div>
+                    <h3 class="card-comunicado-titulo">Entrega de solicitud con el Gobernador de Oaxaca Ing. Salomón Jara Cruz</h3>
+                    <p class="card-comunicado-texto">Gestión ante el gobierno estatal de Oaxaca para el desarrollo de la colonia.</p>
+                    <span class="card-comunicado-galeria-label">Ver fotos →</span>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <div class="col-12">
+                  <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalSenadorMoralesEntrega" aria-label="Ver galería: Entrega de solicitud con el Senador Antonino Morales">
+                    <div class="card-comunicado-fecha">Gestión</div>
+                    <h3 class="card-comunicado-titulo">Entrega de solicitud con el Senador de la República por Oaxaca - Antonino Morales</h3>
+                    <p class="card-comunicado-texto">Gestión ante el Senado de la República para apoyos y proyectos de la colonia.</p>
+                    <span class="card-comunicado-galeria-label">Ver fotos →</span>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <div class="col-12">
+                  <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalSenadorMorales" aria-label="Ver galería: Con el Senador Antonino Morales">
+                    <div class="card-comunicado-fecha">Gestión</div>
+                    <h3 class="card-comunicado-titulo">Con el Senador de la República Mexicana por Oaxaca - Antonino Morales</h3>
+                    <p class="card-comunicado-texto">Reunión y seguimiento con el Senador por Oaxaca en favor de la comunidad.</p>
+                    <span class="card-comunicado-galeria-label">Ver fotos →</span>
+                  </article>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row g-4 justify-content-center">
+                <div class="col-12">
+                  <article class="card-comunicado card-comunicado-galeria" role="button" tabindex="0" data-bs-toggle="modal" data-bs-target="#modalIntegrantesComite" aria-label="Ver galería: Integrantes del Comité">
+                    <div class="card-comunicado-fecha">Comité</div>
+                    <h3 class="card-comunicado-titulo">Integrantes del Comité de la Colonia El Mirador Tecómavaca</h3>
+                    <p class="card-comunicado-texto">Conoce a los integrantes del comité que representan a la colonia.</p>
+                    <span class="card-comunicado-galeria-label">Ver fotos →</span>
+                  </article>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-sm-6 col-lg-4">
-            <article class="card-comunicado">
-              <div class="card-comunicado-fecha">Vigente</div>
-              <h3 class="card-comunicado-titulo">Suspensión temporal de entrega de constancias de posesión</h3>
-              <p class="card-comunicado-texto">En común acuerdo con Bienes comunales y Procuraduría Agraria, no se entregarán constancias de posesión hasta nuevo aviso.</p>
-            </article>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <article class="card-comunicado">
-              <div class="card-comunicado-fecha">Vigente</div>
-              <h3 class="card-comunicado-titulo">Suspensión de aclareos y quema de basura</h3>
-              <p class="card-comunicado-texto">Se suspenden los aclareos y la quema de basura en los sitios y solares de la colonia.</p>
-            </article>
-          </div>
-          <div class="col-sm-6 col-lg-4">
-            <article class="card-comunicado">
-              <div class="card-comunicado-fecha">Vigente</div>
-              <h3 class="card-comunicado-titulo">Aviso para liquidar adeudos de cooperaciones</h3>
-              <p class="card-comunicado-texto">Liquidar adeudos de cooperaciones para obtener la Constancia de no adeudo.</p>
-            </article>
+          <button class="carousel-control-prev carousel-noticias-control" type="button" data-bs-target="#carouselNoticiasMobile" data-bs-slide="prev" aria-label="Noticias anteriores">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next carousel-noticias-control" type="button" data-bs-target="#carouselNoticiasMobile" data-bs-slide="next" aria-label="Siguientes noticias">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          </button>
+          <div class="carousel-indicators carousel-noticias-indicators carousel-noticias-indicators-mobile">
+            <button type="button" data-bs-target="#carouselNoticiasMobile" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Noticia 1"></button>
+            <button type="button" data-bs-target="#carouselNoticiasMobile" data-bs-slide-to="1" aria-label="Noticia 2"></button>
+            <button type="button" data-bs-target="#carouselNoticiasMobile" data-bs-slide-to="2" aria-label="Noticia 3"></button>
+            <button type="button" data-bs-target="#carouselNoticiasMobile" data-bs-slide-to="3" aria-label="Noticia 4"></button>
+            <button type="button" data-bs-target="#carouselNoticiasMobile" data-bs-slide-to="4" aria-label="Noticia 5"></button>
+            <button type="button" data-bs-target="#carouselNoticiasMobile" data-bs-slide-to="5" aria-label="Noticia 6"></button>
+            <button type="button" data-bs-target="#carouselNoticiasMobile" data-bs-slide-to="6" aria-label="Noticia 7"></button>
+            <button type="button" data-bs-target="#carouselNoticiasMobile" data-bs-slide-to="7" aria-label="Noticia 8"></button>
+            <button type="button" data-bs-target="#carouselNoticiasMobile" data-bs-slide-to="8" aria-label="Noticia 9"></button>
+            <button type="button" data-bs-target="#carouselNoticiasMobile" data-bs-slide-to="9" aria-label="Noticia 10"></button>
           </div>
         </div>
         <div class="text-center mt-4">
@@ -375,6 +578,60 @@
               <button type="button" data-bs-target="#carouselConexionElectrica" data-bs-slide-to="1" aria-label="Foto 2"></button>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modales 1 foto: Gobernador, Senador (entrega), Senador, Comité -->
+  <div class="modal fade" id="modalGobernadorJara" tabindex="-1" aria-labelledby="modalGobernadorJaraLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="modalGobernadorJaraLabel">Entrega de solicitud con el Gobernador de Oaxaca Ing. Salomón Jara Cruz</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
+          <img src="Images/Noticias/EntregaGobernadorSalomonJara.jpeg" class="d-block w-100" alt="Entrega de solicitud con el Gobernador de Oaxaca Ing. Salomón Jara Cruz">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalSenadorMoralesEntrega" tabindex="-1" aria-labelledby="modalSenadorMoralesEntregaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="modalSenadorMoralesEntregaLabel">Entrega de solicitud con el Senador de la República por Oaxaca - Antonino Morales</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
+          <img src="Images/Noticias/EntregaSenadorAntoninoMorales.jpeg" class="d-block w-100" alt="Entrega de solicitud con el Senador Antonino Morales">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalSenadorMorales" tabindex="-1" aria-labelledby="modalSenadorMoralesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="modalSenadorMoralesLabel">Con el Senador de la República Mexicana por Oaxaca - Antonino Morales</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
+          <img src="Images/Noticias/SenadorAntoninoMorales.jpeg" class="d-block w-100" alt="Con el Senador Antonino Morales">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalIntegrantesComite" tabindex="-1" aria-labelledby="modalIntegrantesComiteLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title h5" id="modalIntegrantesComiteLabel">Integrantes del Comité de la Colonia El Mirador Tecómavaca</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+        <div class="modal-body p-0">
+          <img src="Images/Noticias/IntegrantesComite.jpeg" class="d-block w-100" alt="Integrantes del Comité de la Colonia El Mirador Tecómavaca">
         </div>
       </div>
     </div>
